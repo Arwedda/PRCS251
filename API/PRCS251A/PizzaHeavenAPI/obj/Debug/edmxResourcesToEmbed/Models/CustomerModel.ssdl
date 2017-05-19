@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.1" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PRCS251A_CUSTOMER">
+    <Key>
+      <PropertyRef Name="CUSTOMER_ID" />
+    </Key>
+    <Property Name="CUSTOMER_ID" Type="number" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="FIRST_NAME" Type="varchar2" MaxLength="15" />
+    <Property Name="SURNAME" Type="varchar2" MaxLength="20" />
+    <Property Name="DOB" Type="date" />
+    <Property Name="PHONE_NUMB" Type="varchar2" MaxLength="11" />
+    <Property Name="EMAIL" Type="varchar2" MaxLength="80" />
+    <Property Name="CUSTOMER_PASSWORD" Type="varchar2" MaxLength="40" />
+    <Property Name="PIZZA_POINTS" Type="number" Precision="2" Scale="0" />
+    <Property Name="BILLING_ADDRESS_LINE_ONE" Type="varchar2" MaxLength="30" />
+    <Property Name="BILLING_ADDRESS_LINE_TWO" Type="varchar2" MaxLength="30" />
+    <Property Name="BILLING_CITY" Type="varchar2" MaxLength="30" />
+    <Property Name="BILLING_COUNTY" Type="varchar2" MaxLength="30" />
+    <Property Name="BILLING_POST_CODE" Type="varchar2" MaxLength="8" />
+    <Property Name="DELIVERY_ADDRESS_LINE_ONE" Type="varchar2" MaxLength="30" />
+    <Property Name="DELIVERY_ADDRESS_LINE_TWO" Type="varchar2" MaxLength="30" />
+    <Property Name="DELIVERY_CITY" Type="varchar2" MaxLength="30" />
+    <Property Name="DELIVERY_COUNTY" Type="varchar2" MaxLength="30" />
+    <Property Name="DELIVERY_POST_CODE" Type="varchar2" MaxLength="8" />
+  </EntityType>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="PRCS251A_CUSTOMER" EntityType="Self.PRCS251A_CUSTOMER" Schema="PRCS251A" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

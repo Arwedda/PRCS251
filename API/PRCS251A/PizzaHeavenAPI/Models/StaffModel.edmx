@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Models.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.1" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="PRCS251A_STAFF">
+          <Key>
+            <PropertyRef Name="STAFF_ID" />
+          </Key>
+          <Property Name="STAFF_ID" Type="number" Precision="4" Scale="0" Nullable="false" />
+          <Property Name="FIRST_NAME" Type="varchar2" MaxLength="44" />
+          <Property Name="SURNAME" Type="varchar2" MaxLength="44" />
+          <Property Name="DOB" Type="date" />
+          <Property Name="PHONE_NUMB" Type="varchar2" MaxLength="108" />
+          <Property Name="EMAIL" Type="varchar2" MaxLength="128" />
+          <Property Name="COMPANY_POSITION" Type="varchar2" MaxLength="40" />
+          <Property Name="START_DATE" Type="date" />
+          <Property Name="ADDRESS_LINE_ONE" Type="varchar2" MaxLength="44" />
+          <Property Name="ADDRESS_LINE_TWO" Type="varchar2" MaxLength="44" />
+          <Property Name="CITY" Type="varchar2" MaxLength="44" />
+          <Property Name="COUNTY" Type="varchar2" MaxLength="44" />
+          <Property Name="POST_CODE" Type="varchar2" MaxLength="24" />
+          <Property Name="STAFF_PASSWORD" Type="varchar2" MaxLength="108" />
+          <Property Name="SALT" Type="varchar2" MaxLength="64" />
+          <Property Name="PRIVATE_KEY" Type="varchar2" MaxLength="16" />
+          <Property Name="EMPLOYED" Type="varchar2" MaxLength="80" />
+        </EntityType>
+        <EntityContainer Name="ModelsStoreContainer">
+          <EntitySet Name="PRCS251A_STAFF" EntityType="Self.PRCS251A_STAFF" Schema="PRCS251A" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Models" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Staff">
+          <Key>
+            <PropertyRef Name="StaffID" />
+          </Key>
+          <Property Name="StaffID" Type="Int16" Nullable="false" />
+          <Property Name="Firstname" Type="String" MaxLength="44" FixedLength="false" Unicode="false" />
+          <Property Name="Surname" Type="String" MaxLength="44" FixedLength="false" Unicode="false" />
+          <Property Name="dob" Type="DateTime" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="108" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="CompanyPosition" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="StartDate" Type="DateTime" />
+          <Property Name="AddressLineOne" Type="String" MaxLength="44" FixedLength="false" Unicode="false" />
+          <Property Name="AddressLineTwo" Type="String" MaxLength="44" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="44" FixedLength="false" Unicode="false" />
+          <Property Name="County" Type="String" MaxLength="44" FixedLength="false" Unicode="false" />
+          <Property Name="PostCode" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+          <Property Name="StaffPassword" Type="String" MaxLength="108" FixedLength="false" Unicode="false" />
+          <Property Name="Salt" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="PrivateKey" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="Employed" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="StaffEntityConnection" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Staff" EntityType="Models.Staff" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelsStoreContainer" CdmEntityContainer="StaffEntityConnection">
+          <EntitySetMapping Name="Staff">
+            <EntityTypeMapping TypeName="Models.Staff">
+              <MappingFragment StoreEntitySet="PRCS251A_STAFF">
+                <ScalarProperty Name="Employed" ColumnName="EMPLOYED" />
+                <ScalarProperty Name="PrivateKey" ColumnName="PRIVATE_KEY" />
+                <ScalarProperty Name="Salt" ColumnName="SALT" />
+                <ScalarProperty Name="StaffID" ColumnName="STAFF_ID" />
+                <ScalarProperty Name="Firstname" ColumnName="FIRST_NAME" />
+                <ScalarProperty Name="Surname" ColumnName="SURNAME" />
+                <ScalarProperty Name="dob" ColumnName="DOB" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PHONE_NUMB" />
+                <ScalarProperty Name="Email" ColumnName="EMAIL" />
+                <ScalarProperty Name="CompanyPosition" ColumnName="COMPANY_POSITION" />
+                <ScalarProperty Name="StartDate" ColumnName="START_DATE" />
+                <ScalarProperty Name="AddressLineOne" ColumnName="ADDRESS_LINE_ONE" />
+                <ScalarProperty Name="AddressLineTwo" ColumnName="ADDRESS_LINE_TWO" />
+                <ScalarProperty Name="City" ColumnName="CITY" />
+                <ScalarProperty Name="County" ColumnName="COUNTY" />
+                <ScalarProperty Name="PostCode" ColumnName="POST_CODE" />
+                <ScalarProperty Name="StaffPassword" ColumnName="STAFF_PASSWORD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

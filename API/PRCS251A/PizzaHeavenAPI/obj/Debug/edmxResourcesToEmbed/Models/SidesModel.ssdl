@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.1" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PRCS251A_SIDE">
+    <Key>
+      <PropertyRef Name="SIDE_NAME" />
+    </Key>
+    <Property Name="SIDE_NAME" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="SIDE_DESCRIPTION" Type="varchar2" MaxLength="250" />
+    <Property Name="SIDE_PRICE" Type="number" Precision="6" Scale="2" />
+    <Property Name="HEAT_RATING" Type="number" Precision="32" Scale="2" />
+    <Property Name="SIDE_IMAGE" Type="varchar2" MaxLength="15" />
+  </EntityType>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="PRCS251A_SIDE" EntityType="Self.PRCS251A_SIDE" Schema="PRCS251A" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

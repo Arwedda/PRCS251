@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="CustomerEntityConnection">
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="Model.Customer">
+        <MappingFragment StoreEntitySet="PRCS251A_CUSTOMER">
+          <ScalarProperty Name="CustomerID" ColumnName="CUSTOMER_ID" />
+          <ScalarProperty Name="Firstname" ColumnName="FIRST_NAME" />
+          <ScalarProperty Name="Surname" ColumnName="SURNAME" />
+          <ScalarProperty Name="dob" ColumnName="DOB" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PHONE_NUMB" />
+          <ScalarProperty Name="Email" ColumnName="EMAIL" />
+          <ScalarProperty Name="CustomerPassword" ColumnName="CUSTOMER_PASSWORD" />
+          <ScalarProperty Name="PizzaPoints" ColumnName="PIZZA_POINTS" />
+          <ScalarProperty Name="BillingAddressLineOne" ColumnName="BILLING_ADDRESS_LINE_ONE" />
+          <ScalarProperty Name="BillingAddressLineTwo" ColumnName="BILLING_ADDRESS_LINE_TWO" />
+          <ScalarProperty Name="BillingCity" ColumnName="BILLING_CITY" />
+          <ScalarProperty Name="BillingCounty" ColumnName="BILLING_COUNTY" />
+          <ScalarProperty Name="BillingPostCode" ColumnName="BILLING_POST_CODE" />
+          <ScalarProperty Name="DeliveryAddressLineOne" ColumnName="DELIVERY_ADDRESS_LINE_ONE" />
+          <ScalarProperty Name="DeliveryAddressLineTwo" ColumnName="DELIVERY_ADDRESS_LINE_TWO" />
+          <ScalarProperty Name="DeliveryCity" ColumnName="DELIVERY_CITY" />
+          <ScalarProperty Name="DeliveryCounty" ColumnName="DELIVERY_COUNTY" />
+          <ScalarProperty Name="DeliveryPostCode" ColumnName="DELIVERY_POST_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

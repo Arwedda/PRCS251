@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PizzaSauceStoreContainer" CdmEntityContainer="SauceConn">
+    <EntitySetMapping Name="PizzaSauces">
+      <EntityTypeMapping TypeName="PizzaSauce.PizzaSauce">
+        <MappingFragment StoreEntitySet="PRCS251A_PIZZA_SAUCE">
+          <ScalarProperty Name="SauceName" ColumnName="SAUCE_NAME" />
+          <ScalarProperty Name="SauceDescription" ColumnName="SAUCE_DESCRIPTION" />
+          <ScalarProperty Name="SaucePrice" ColumnName="SAUCE_PRICE" />
+          <ScalarProperty Name="HeatRating" ColumnName="HEAT_RATING" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

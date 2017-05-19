@@ -1,0 +1,260 @@
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\ApplicationInsights.config
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\roslyn\csc.exe
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\roslyn\vbc.exe
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\PizzaHeavenAPI.dll.config
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\PizzaHeavenAPI.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\PizzaHeavenAPI.pdb
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Antlr3.Runtime.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\EntityFramework.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Microsoft.AI.Web.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Microsoft.ApplicationInsights.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Newtonsoft.Json.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Oracle.ManagedDataAccess.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.Helpers.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.Http.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.Mvc.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.Optimization.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.Razor.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.WebPages.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\WebGrease.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\EntityFramework.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Microsoft.AI.Web.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Microsoft.ApplicationInsights.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Newtonsoft.Json.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.Helpers.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.Http.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.Mvc.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.Optimization.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.Razor.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.WebPages.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\bin\Antlr3.Runtime.pdb
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\obj\Debug\PizzaHeavenAPI.dll
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\obj\Debug\PizzaHeavenAPI.pdb
+C:\Users\dansc\documents\visual studio 2015\Projects\PizzaHeavenAPI\PizzaHeavenAPI\obj\Debug\PizzaHeavenAPI.csprojResolveAssemblyReference.cache
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\ApplicationInsights.config
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\csc.exe
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\System.Collections.Immutable.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\System.Reflection.Metadata.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\vbc.exe
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\VBCSCompiler.exe
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\VBCSCompiler.exe.config
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\PizzaHeavenAPI.dll.config
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\PizzaHeavenAPI.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\PizzaHeavenAPI.pdb
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Antlr3.Runtime.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\EntityFramework.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\EntityFramework.SqlServer.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.Agent.Intercept.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.DependencyCollector.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.Web.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.WindowsServer.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.ApplicationInsights.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.Web.Infrastructure.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Newtonsoft.Json.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Oracle.ManagedDataAccess.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Net.Http.Formatting.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Helpers.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Http.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Http.WebHost.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Mvc.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Optimization.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Razor.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.Deployment.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.Razor.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\WebGrease.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\EntityFramework.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\EntityFramework.SqlServer.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.DependencyCollector.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.Web.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.WindowsServer.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.ApplicationInsights.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Newtonsoft.Json.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Net.Http.Formatting.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Helpers.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Http.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Http.WebHost.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Mvc.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Optimization.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Razor.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.Deployment.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.Razor.xml
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Antlr3.Runtime.pdb
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\obj\Debug\PizzaHeavenAPI.dll
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\obj\Debug\PizzaHeavenAPI.pdb
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\ApplicationInsights.config
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\csc.exe
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\vbc.exe
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\PizzaHeavenAPI.dll.config
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\PizzaHeavenAPI.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\PizzaHeavenAPI.pdb
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Antlr3.Runtime.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\EntityFramework.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.Web.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.ApplicationInsights.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Newtonsoft.Json.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Oracle.ManagedDataAccess.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Helpers.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Http.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Mvc.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Optimization.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Razor.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\WebGrease.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\EntityFramework.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.Web.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.ApplicationInsights.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Newtonsoft.Json.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Helpers.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Http.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Mvc.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Optimization.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Razor.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\bin\Antlr3.Runtime.pdb
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\obj\Debug\PizzaHeavenAPI.dll
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\obj\Debug\PizzaHeavenAPI.pdb
+F:\prcs251\API\PRCS251A\PizzaHeavenAPI\obj\Debug\PizzaHeavenAPI.csprojResolveAssemblyReference.cache
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\ApplicationInsights.config
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\csc.exe
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\vbc.exe
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\PizzaHeavenAPI.dll.config
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\PizzaHeavenAPI.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\PizzaHeavenAPI.pdb
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Antlr3.Runtime.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\EntityFramework.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.Web.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Newtonsoft.Json.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Oracle.ManagedDataAccess.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Helpers.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Http.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Mvc.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Optimization.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Razor.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\WebGrease.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\EntityFramework.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.Web.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Newtonsoft.Json.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Helpers.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Http.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Mvc.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Optimization.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.Razor.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\bin\Antlr3.Runtime.pdb
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\obj\Debug\PizzaHeavenAPI.csprojResolveAssemblyReference.cache
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\obj\Debug\PizzaHeavenAPI.dll
+C:\Users\Craig\Downloads\PRCS251_TeamA-prcs251-77769330ec5b\PRCS251_TeamA-prcs251-77769330ec5b\API\PRCS251A\PizzaHeavenAPI\obj\Debug\PizzaHeavenAPI.pdb
+C:\Users\dansc\Documents\Github\prcs251\API\PRCS251A\PizzaHeavenAPI\obj\Debug\PizzaHeavenAPI.csprojResolveAssemblyReference.cache

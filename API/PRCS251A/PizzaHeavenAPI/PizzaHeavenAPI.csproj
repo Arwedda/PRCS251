@@ -1,0 +1,967 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB512BB8-578A-4409-A810-751B2652E073}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PizzaHeavenAPI</RootNamespace>
+    <AssemblyName>PizzaHeavenAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.2400\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.EntityFramework.12.1.2400\lib\net45\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\CompanyPositionsController.cs" />
+    <Compile Include="Controllers\CustomerOrdersController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
+    <Compile Include="Controllers\CustomPizzasController.cs" />
+    <Compile Include="Controllers\DrinksController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImagesController.cs" />
+    <Compile Include="Controllers\OrderItemsController.cs" />
+    <Compile Include="Controllers\OrderStatusController.cs" />
+    <Compile Include="Controllers\PercentageOffersController.cs" />
+    <Compile Include="Controllers\PizzaBasesController.cs" />
+    <Compile Include="Controllers\PizzaCheeseController.cs" />
+    <Compile Include="Controllers\PizzaCrustsController.cs" />
+    <Compile Include="Controllers\PizzaSaucesController.cs" />
+    <Compile Include="Controllers\PizzasController.cs" />
+    <Compile Include="Controllers\PizzaSizesController.cs" />
+    <Compile Include="Controllers\SidesController.cs" />
+    <Compile Include="Controllers\StaffController.cs" />
+    <Compile Include="Controllers\ToppingsController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BaseModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BaseModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BaseModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CheeseModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CheeseModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CheeseModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CheeseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CheeseModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CheeseModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CompanyPosition.cs">
+      <DependentUpon>CompanyPositionModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CompanyPositionModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CompanyPositionModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CompanyPositionModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CompanyPositionModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CompanyPositionModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CompanyPositionModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CrustModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrustModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CrustModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrustModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CrustModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrustModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Customer.cs">
+      <DependentUpon>CustomersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomerOrder.cs">
+      <DependentUpon>CustomerOrderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomerOrderModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerOrderModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomerOrderModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerOrderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomerOrderModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerOrderModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomersModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomersModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomersModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomersModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomersModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomPizza.cs">
+      <DependentUpon>CustomPizzaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomPizzaModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomPizzaModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomPizzaModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomPizzaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomPizzaModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomPizzaModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Drink.cs">
+      <DependentUpon>DrinkModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DrinkModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrinkModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DrinkModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrinkModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DrinkModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrinkModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Image.cs">
+      <DependentUpon>ImageModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ImageModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ImageModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ImageModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderItem.cs">
+      <DependentUpon>OrderItems.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderItems.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderItems.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderItems.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderItems.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderItems.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderItems.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderStatus.cs">
+      <DependentUpon>StatusModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PercentageOffer.cs">
+      <DependentUpon>PercentageOfferModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PercentageOfferModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PercentageOfferModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PercentageOfferModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PercentageOfferModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PercentageOfferModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PercentageOfferModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Pizza.cs">
+      <DependentUpon>PizzaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PizzaBase.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PizzaCheese.cs">
+      <DependentUpon>CheeseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PizzaCrust.cs">
+      <DependentUpon>CrustModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PizzaModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PizzaModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PizzaModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PizzaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PizzaModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PizzaModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PizzaSauce.cs">
+      <DependentUpon>SauceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PizzaSize.cs">
+      <DependentUpon>SizeModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SauceModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SauceModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SauceModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SauceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SauceModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SauceModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Side.cs">
+      <DependentUpon>SidesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SidesModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SidesModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SidesModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SidesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SidesModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SidesModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SizeModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SizeModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SizeModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SizeModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SizeModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SizeModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Staff.cs">
+      <DependentUpon>StaffModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StaffModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StaffModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StaffModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StatusModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StatusModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StatusModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Topping.cs">
+      <DependentUpon>ToppingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ToppingModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToppingModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ToppingModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToppingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ToppingModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToppingModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Models\BaseModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BaseModel.edmx</DependentUpon>
+      <LastGenOutput>BaseModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BaseModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BaseModel.edmx</DependentUpon>
+      <LastGenOutput>BaseModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CheeseModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CheeseModel.edmx</DependentUpon>
+      <LastGenOutput>CheeseModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CheeseModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CheeseModel.edmx</DependentUpon>
+      <LastGenOutput>CheeseModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CompanyPositionModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CompanyPositionModel.edmx</DependentUpon>
+      <LastGenOutput>CompanyPositionModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CompanyPositionModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CompanyPositionModel.edmx</DependentUpon>
+      <LastGenOutput>CompanyPositionModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CrustModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CrustModel.edmx</DependentUpon>
+      <LastGenOutput>CrustModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CrustModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CrustModel.edmx</DependentUpon>
+      <LastGenOutput>CrustModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CustomerOrderModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CustomerOrderModel.edmx</DependentUpon>
+      <LastGenOutput>CustomerOrderModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CustomerOrderModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CustomerOrderModel.edmx</DependentUpon>
+      <LastGenOutput>CustomerOrderModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CustomersModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CustomersModel.edmx</DependentUpon>
+      <LastGenOutput>CustomersModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CustomersModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CustomersModel.edmx</DependentUpon>
+      <LastGenOutput>CustomersModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CustomPizzaModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CustomPizzaModel.edmx</DependentUpon>
+      <LastGenOutput>CustomPizzaModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CustomPizzaModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CustomPizzaModel.edmx</DependentUpon>
+      <LastGenOutput>CustomPizzaModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\DrinkModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DrinkModel.edmx</DependentUpon>
+      <LastGenOutput>DrinkModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\DrinkModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DrinkModel.edmx</DependentUpon>
+      <LastGenOutput>DrinkModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ImageModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ImageModel.edmx</DependentUpon>
+      <LastGenOutput>ImageModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ImageModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ImageModel.edmx</DependentUpon>
+      <LastGenOutput>ImageModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\OrderItems.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OrderItems.edmx</DependentUpon>
+      <LastGenOutput>OrderItems.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\OrderItems.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OrderItems.edmx</DependentUpon>
+      <LastGenOutput>OrderItems.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\PercentageOfferModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PercentageOfferModel.edmx</DependentUpon>
+      <LastGenOutput>PercentageOfferModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\PercentageOfferModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PercentageOfferModel.edmx</DependentUpon>
+      <LastGenOutput>PercentageOfferModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\PizzaModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PizzaModel.edmx</DependentUpon>
+      <LastGenOutput>PizzaModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\PizzaModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PizzaModel.edmx</DependentUpon>
+      <LastGenOutput>PizzaModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\SauceModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SauceModel.edmx</DependentUpon>
+      <LastGenOutput>SauceModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\SauceModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SauceModel.edmx</DependentUpon>
+      <LastGenOutput>SauceModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\SidesModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SidesModel.edmx</DependentUpon>
+      <LastGenOutput>SidesModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\SidesModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SidesModel.edmx</DependentUpon>
+      <LastGenOutput>SidesModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\SizeModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SizeModel.edmx</DependentUpon>
+      <LastGenOutput>SizeModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\SizeModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SizeModel.edmx</DependentUpon>
+      <LastGenOutput>SizeModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\StaffModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>StaffModel.edmx</DependentUpon>
+      <LastGenOutput>StaffModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\StaffModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>StaffModel.edmx</DependentUpon>
+      <LastGenOutput>StaffModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\StatusModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>StatusModel.edmx</DependentUpon>
+      <LastGenOutput>StatusModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\StatusModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>StatusModel.edmx</DependentUpon>
+      <LastGenOutput>StatusModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ToppingModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ToppingModel.edmx</DependentUpon>
+      <LastGenOutput>ToppingModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ToppingModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ToppingModel.edmx</DependentUpon>
+      <LastGenOutput>ToppingModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Models\StaffModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>StaffModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\StaffModel.edmx.diagram">
+      <DependentUpon>StaffModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\ToppingModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ToppingModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ToppingModel.edmx.diagram">
+      <DependentUpon>ToppingModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\SidesModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SidesModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\SidesModel.edmx.diagram">
+      <DependentUpon>SidesModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\ImageModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ImageModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ImageModel.edmx.diagram">
+      <DependentUpon>ImageModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\PizzaModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PizzaModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\PizzaModel.edmx.diagram">
+      <DependentUpon>PizzaModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\CustomerOrderModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CustomerOrderModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\CustomerOrderModel.edmx.diagram">
+      <DependentUpon>CustomerOrderModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\OrderItems.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>OrderItems.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\OrderItems.edmx.diagram">
+      <DependentUpon>OrderItems.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\StatusModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>StatusModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\StatusModel.edmx.diagram">
+      <DependentUpon>StatusModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\BaseModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BaseModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\BaseModel.edmx.diagram">
+      <DependentUpon>BaseModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\CheeseModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CheeseModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\CheeseModel.edmx.diagram">
+      <DependentUpon>CheeseModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\CrustModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CrustModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\CrustModel.edmx.diagram">
+      <DependentUpon>CrustModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\SizeModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SizeModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\SizeModel.edmx.diagram">
+      <DependentUpon>SizeModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\CustomPizzaModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CustomPizzaModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\CustomPizzaModel.edmx.diagram">
+      <DependentUpon>CustomPizzaModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\SauceModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SauceModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\SauceModel.edmx.diagram">
+      <DependentUpon>SauceModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\DrinkModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DrinkModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\DrinkModel.edmx.diagram">
+      <DependentUpon>DrinkModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\CustomersModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CustomersModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\CustomersModel.edmx.diagram">
+      <DependentUpon>CustomersModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\CompanyPositionModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CompanyPositionModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\CompanyPositionModel.edmx.diagram">
+      <DependentUpon>CompanyPositionModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\PercentageOfferModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PercentageOfferModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\PercentageOfferModel.edmx.diagram">
+      <DependentUpon>PercentageOfferModel.edmx</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\jocal.pubxml" />
+    <None Include="Properties\PublishProfiles\local.pubxml" />
+    <None Include="Properties\PublishProfiles\PizzaHeaven.pubxml" />
+    <None Include="Properties\PublishProfiles\xserve deployment.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52777</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52777/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

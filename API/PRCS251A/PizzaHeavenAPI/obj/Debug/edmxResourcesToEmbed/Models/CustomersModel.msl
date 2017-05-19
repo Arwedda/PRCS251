@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CustomersStoreContainer" CdmEntityContainer="CustomerConnection">
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="Customers.Customer">
+        <MappingFragment StoreEntitySet="PRCS251A_CUSTOMER">
+          <ScalarProperty Name="PrivateKey" ColumnName="PRIVATE_KEY" />
+          <ScalarProperty Name="CustomerID" ColumnName="CUSTOMER_ID" />
+          <ScalarProperty Name="Firstname" ColumnName="FIRST_NAME" />
+          <ScalarProperty Name="Surname" ColumnName="SURNAME" />
+          <ScalarProperty Name="dob" ColumnName="DOB" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PHONE_NUMB" />
+          <ScalarProperty Name="Email" ColumnName="EMAIL" />
+          <ScalarProperty Name="CustomerPassword" ColumnName="CUSTOMER_PASSWORD" />
+          <ScalarProperty Name="DeliveryAddressLineOne" ColumnName="DELIVERY_ADDRESS_LINE_ONE" />
+          <ScalarProperty Name="DeliveryAddressLineTwo" ColumnName="DELIVERY_ADDRESS_LINE_TWO" />
+          <ScalarProperty Name="DeliveryCity" ColumnName="DELIVERY_CITY" />
+          <ScalarProperty Name="DeliveryCounty" ColumnName="DELIVERY_COUNTY" />
+          <ScalarProperty Name="DeliveryPostCode" ColumnName="DELIVERY_POST_CODE" />
+          <ScalarProperty Name="Salt" ColumnName="SALT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,34 @@
+Address Lookup API
+
+https://api.getaddress.io/v2/uk/!postcode!/!number!?api-key=dEcJsO8ZtEOS0o3vW1o3Pg8090
+
+Fill !postcode! with postcode and !number! with name/number
+
+All keys active for 30 days
+Keys:
+rOp9tWS8pEabHxu2E6k6Cg8522 (5/5/17)
+NaMLIRKsOUe5KuruziE-5w8523 (5/5/17)
+
+-----------------------------------------------------------------------------------------
+
+Google Maps/Directions API Keys
+
+https://developers.google.com/maps/
+https://developers.google.com/maps/documentation/directions/intro?refresh=1&pli=1
+
+
+
+AIzaSyAtB-vZp2PNSZlScB7ft0USKSho9NQa0A8 (03/05/17)
+
+------------------------------------------------------------------------------------------
+
+PayPal
+
+joseph.kellaway@students.plymouth.ac.uk
+pizzaheaven
+
+testbuyer@pizzaheaven.com
+pizzaheaven
+
+testbusiness@pizzaheaven.com
+1337hacker

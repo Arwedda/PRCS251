@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.1" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PRCS251A_PIZZA">
+    <Key>
+      <PropertyRef Name="PIZZA_NAME" />
+    </Key>
+    <Property Name="PIZZA_NAME" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="PIZZA_DESCRIPTION" Type="varchar2" MaxLength="250" />
+    <Property Name="PIZZA_PRICE" Type="number" Precision="32" Scale="2" />
+    <Property Name="HEAT_RATING" Type="number" Precision="1" Scale="0" />
+    <Property Name="PIZZA_IMAGE" Type="varchar2" MaxLength="15" />
+  </EntityType>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="PRCS251A_PIZZA" EntityType="Self.PRCS251A_PIZZA" Schema="PRCS251A" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PizzaBase" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PizzaBase">
+    <Key>
+      <PropertyRef Name="BaseName" />
+    </Key>
+    <Property Name="BaseName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BaseDescription" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="BasePrice" Type="Decimal" Precision="32" Scale="2" />
+  </EntityType>
+  <EntityContainer Name="BaseConnection" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PizzaBases" EntityType="PizzaBase.PizzaBase" />
+  </EntityContainer>
+</Schema>

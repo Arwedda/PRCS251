@@ -1,0 +1,35 @@
+PRCS251A Demo
+
+This is our take on the specification given for PRCS251A.
+
+We have decided to go with the brand "PizzaHeaven" with the Italian flag colours as base colours throughout.
+We did this because our client (Mark) didn't have any branding requirements for us.
+
+1.  WEBSITE:	Show current menu
+2.  MANAGER: 	Add pizza to the menu
+		Add image for the pizza
+3.  WEBSITE:	Show off new menu item
+		Register
+		Place order
+		Show off PayPal
+4.  MANAGER:	Add new staff member
+5.     CHEF:	Progress new order
+6. DELIVERY:	Log in
+		Claim order
+		Follow map
+		Phone customer (make sure Craig's number input)
+		Delivery pizza
+7.  WEBSITE:	Highlight order has left status page
+
+Hardest parts of the project:
+Web		- CSS
+		- Basket re-design
+
+Android		- Encryption (couldn't use library)
+		- Expandable list view
+		- Threadding creates a different way of thinking about coding
+
+Security	- No security elements are taught to Computer Science and so we had to research our own after the 2 hour session
+
+Desktop		- Live usability demo absolutely slated UI design and we had to develope a new view from scratch
+

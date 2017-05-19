@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ToppingsEntityConnection" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Toppings" EntityType="Model.Topping" />
+  </EntityContainer>
+  <EntityType Name="Topping">
+    <Key>
+      <PropertyRef Name="ToppingName" />
+    </Key>
+    <Property Name="ToppingName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ToppingDescription" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="ToppingPrice" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="HeatRating" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ToppingImage" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

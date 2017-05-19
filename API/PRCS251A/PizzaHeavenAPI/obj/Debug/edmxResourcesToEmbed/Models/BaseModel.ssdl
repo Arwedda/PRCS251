@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PizzaBase.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.1" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PRCS251A_PIZZA_BASE">
+    <Key>
+      <PropertyRef Name="BASE_NAME" />
+    </Key>
+    <Property Name="BASE_NAME" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="BASE_DESCRIPTION" Type="varchar2" MaxLength="80" />
+    <Property Name="BASE_PRICE" Type="number" Precision="32" Scale="2" />
+  </EntityType>
+  <EntityContainer Name="PizzaBaseStoreContainer">
+    <EntitySet Name="PRCS251A_PIZZA_BASE" EntityType="Self.PRCS251A_PIZZA_BASE" Schema="PRCS251A" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,48 @@
+#delivery{
+    padding-top: 2.5%;
+    margin-left: 10%;
+    text-align: center;
+    width: 80%;
+}
+
+table{
+    text-align: left;
+    width: 100%;
+}
+
+th{
+    text-align: center;
+}
+
+#left{
+    text-align: right;
+}
+
+td{
+    width: 25%;
+}
+
+form{
+    width: 50%;
+    display: inline-block;
+}
+
+#paypal{
+    text-align: right;
+}
+
+#paypalbtn{
+    margin-right: 10px;
+}
+
+#cash{
+    text-align: left;
+}
+
+#cashbtn{
+    margin-left: 10px;
+}
+
+#paypalbtn:focus, #cashbtn:focus{
+    outline: none;
+}

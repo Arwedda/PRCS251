@@ -1,0 +1,201 @@
+.menupage{
+    position: absolute;
+    text-align: center;
+    margin-left: 10%;
+    padding-bottom: 5%;
+    margin-top: 165px;
+    width: 80%;
+    white-space: normal;
+    word-wrap: break-word;
+    min-height: 60%;
+}
+
+.basketIcon{
+    display: inline;
+}
+
+.basketIcon img{
+    position: absolute;
+}
+
+.basketQuantity{
+    color:#fff;
+    padding-left: 18px;
+}
+
+.basketTotal{
+    padding-left:25px;
+}
+
+.menudiv{
+  margin-left: 3.333%;
+  margin-top: 2.5%;
+  margin-bottom: 2%;
+  border: 1px solid black;
+  background: #3c3c3c;
+  display: inline-block;
+  float: left;
+  height: 265px;
+  width: 300px;
+}
+
+.menuimg{
+  height: auto;
+  width: 298px;
+  z-index: 0;
+}
+
+.basketAdd{
+    top:0;
+    float:left;
+}
+
+.basketAdd h4{
+  position:absolute;
+  margin-left: 1px;
+  margin-right: 10px;
+  margin-top: 0px;
+  width: 299px;
+  height: 25px;
+  z-index: 3;
+  color: #fff;
+  white-space: normal;
+  word-wrap: break-word;
+  background: #DA4246;
+}
+
+.descriptiondiv{
+  float: left;
+}
+
+.price{
+    display:inline;
+}
+
+.descriptiondiv h4{
+  position:absolute;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 40px;
+  width: 280px;
+  z-index: 3;
+  color: #fff;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.infoimg{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  z-index: 100;
+  margin-left: 260px;
+}
+
+.infoimg:focus, .addBasket:focus{
+    outline: none;
+}
+
+.infodiv{
+  margin-top: 3%;
+  width: 100%;
+  min-height: 36px;
+  max-width: 300px;
+}
+
+.infodiv h4{
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: left;
+    margin: initial;
+    width: 130px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.infodiv h6{
+  margin: 0;
+  float:right;
+  margin-right: 2%;
+  display:inline;
+  color: #fff;
+  font-family: 'Lato';
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.infodiv h7{
+    color: #FFFFFF;
+    text-align: left;
+    width: 245px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.infodiv select{
+  margin-left: 15px;
+  display: inline;
+}
+
+.infodiv2 select{
+  float: left;
+  margin-left: 18px;
+  display: inline;
+  height:50px;
+  width:50px;
+  font-size: 14px;
+}
+
+.infodiv2{
+  margin-top: 3%;
+  min-width: 100%;
+  min-height: 50%;
+}
+
+.addBasket{
+  float:right;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  height: auto;
+  width: 35%;
+}
+
+#heatRating{
+  float:left;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  height: auto;
+  width: 31%;
+}
+
+h7{
+    margin: 0;
+    width: 100%;
+    color: #000;
+    font-family: 'Lato';
+    font-size: 15px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+h3{
+    margin: 0;
+    width: 100%;
+    color: #000;
+    font-family: 'Lato';
+    font-size: 15px;
+    font-weight: 400;
+    display: inline;
+}
+
+#offers{
+    margin-top: 15%;
+}
+
+#custombanner{
+    border: solid 1px black;
+    margin-top: 3%;
+    max-width: 80%;
+    display: block;
+    margin-left: 8%;
+}

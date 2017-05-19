@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="Int16" Nullable="false" />
+    <Property Name="Firstname" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Surname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="dob" Type="DateTime" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerPassword" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PizzaPoints" Type="Byte" />
+    <Property Name="BillingAddressLineOne" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="BillingAddressLineTwo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="BillingCity" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="BillingCounty" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="BillingPostCode" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="DeliveryAddressLineOne" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DeliveryAddressLineTwo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DeliveryCity" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DeliveryCounty" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DeliveryPostCode" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="CustomerEntityConnection" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Customers" EntityType="Model.Customer" />
+  </EntityContainer>
+</Schema>

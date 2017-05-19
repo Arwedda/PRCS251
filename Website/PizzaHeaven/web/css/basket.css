@@ -1,0 +1,56 @@
+#basket{
+    padding-top: 2.5%;
+    margin-left: 10%;
+    text-align: center;
+    width: 80%;
+}
+
+table{
+    text-align: left;
+    width: 100%;
+}
+
+#quantity{
+    padding-left: 3px;
+}
+
+td{
+    vertical-align: baseline;
+}
+
+#label{
+    width: 10%;
+}
+
+.quantity{
+    width: 25px;
+}
+
+.itemprice, .lineprice, #total{
+    display: inline;
+}
+
+.minus, .quantity, .plus {
+    position: absolute;
+}
+
+.quantity{
+    margin-top: 3px;
+    margin-left: 34px;
+}
+
+.plus{
+    margin-left: 55px;
+}
+
+#proceed{
+    text-align: center;
+}
+
+#submit:focus, .minus:focus, .plus:focus, .remove:focus{
+    outline: none;
+}
+
+footer{
+    position: relative;
+}

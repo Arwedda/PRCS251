@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DrinksStoreContainer" CdmEntityContainer="DrinkConnection">
+    <EntitySetMapping Name="Drinks">
+      <EntityTypeMapping TypeName="Drinks.Drink">
+        <MappingFragment StoreEntitySet="PRCS251A_DRINK">
+          <ScalarProperty Name="Name" ColumnName="DRINK_NAME" />
+          <ScalarProperty Name="Description" ColumnName="DRINK_DESCRIPTION" />
+          <ScalarProperty Name="SmallPrice" ColumnName="SMALL_PRICE" />
+          <ScalarProperty Name="Image" ColumnName="DRINK_IMAGE" />
+          <ScalarProperty Name="SmallSize" ColumnName="SMALL_SIZE" />
+          <ScalarProperty Name="MediumPrice" ColumnName="MEDIUM_PRICE" />
+          <ScalarProperty Name="MediumSize" ColumnName="MEDIUM_SIZE" />
+          <ScalarProperty Name="LargeSize" ColumnName="LARGE_SIZE" />
+          <ScalarProperty Name="LargePrice" ColumnName="LARGE_PRICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CustomPizzaStoreContainer" CdmEntityContainer="CustomisedPizzaConnection">
+    <EntitySetMapping Name="CustomPizzas">
+      <EntityTypeMapping TypeName="CustomPizza.CustomPizza">
+        <MappingFragment StoreEntitySet="PRCS251A_CUSTOM_PIZZA">
+          <ScalarProperty Name="CustomPizzaName" ColumnName="CUSTOM_PIZZA_NAME" />
+          <ScalarProperty Name="SizeName" ColumnName="SIZE_NAME" />
+          <ScalarProperty Name="BaseName" ColumnName="BASE_NAME" />
+          <ScalarProperty Name="CrustName" ColumnName="CRUST_NAME" />
+          <ScalarProperty Name="SauceName" ColumnName="SAUCE_NAME" />
+          <ScalarProperty Name="CheeseName" ColumnName="CHEESE_NAME" />
+          <ScalarProperty Name="CustomPizzaImage" ColumnName="CUSTOM_PIZZA_IMAGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

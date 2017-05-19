@@ -1,0 +1,47 @@
+.menupage{
+    margin-top: 225px;
+}
+
+#size{
+    width: 25%;
+    text-align: left;
+    display: inline-block;
+}
+
+#base{
+    width: 25%;
+    text-align: left;
+    display: inline-block;
+}
+
+#crust{
+    width: 25%;
+    text-align: left;
+    display: inline-block;
+}
+
+#sauce{
+    width: 37.5%;
+    text-align: left;
+    padding-left: 15%;
+    display: inline-block;
+}
+
+#cheese{
+    width: 37.5%;
+    text-align: left;
+    margin-top: 3%;
+    display: inline-block;
+}
+
+#topping{
+    width: 75%;
+    margin-top: 3%;
+    margin-left: 12.5%;
+}
+
+.addBasket{
+  width: 5%;
+  padding-top: 3%;
+  margin-right: 47.5%;
+}

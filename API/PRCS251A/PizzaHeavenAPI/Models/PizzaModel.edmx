@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.1" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="PRCS251A_PIZZA">
+          <Key>
+            <PropertyRef Name="PIZZA_NAME" />
+          </Key>
+          <Property Name="PIZZA_NAME" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="PIZZA_DESCRIPTION" Type="varchar2" MaxLength="250" />
+          <Property Name="SMALL_PIZZA_PRICE" Type="number" Precision="32" Scale="2" />
+          <Property Name="HEAT_RATING" Type="number" Precision="32" Scale="0" />
+          <Property Name="PIZZA_IMAGE" Type="varchar2" MaxLength="15" />
+          <Property Name="MEDIUM_PIZZA_PRICE" Type="number" Precision="32" Scale="0" />
+          <Property Name="LARGE_PIZZA_PRICE" Type="number" Precision="32" Scale="0" />
+        </EntityType>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="PRCS251A_PIZZA" EntityType="Self.PRCS251A_PIZZA" Schema="PRCS251A" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Pizza">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="SmallPrice" Type="Decimal" Precision="32" Scale="2" />
+          <Property Name="HeatRating" Type="Decimal" Precision="32" Scale="0" />
+          <Property Name="Image" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="MediumPrice" Type="Decimal" Precision="32" Scale="2" />
+          <Property Name="LargePrice" Type="Decimal" Precision="32" Scale="2" a:GetterAccess="Public" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+        </EntityType>
+        <EntityContainer Name="PizzaConnection" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Pizzas" EntityType="Model.Pizza" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="PizzaConnection">
+          <EntitySetMapping Name="Pizzas">
+            <EntityTypeMapping TypeName="Model.Pizza">
+              <MappingFragment StoreEntitySet="PRCS251A_PIZZA">
+                <ScalarProperty Name="Name" ColumnName="PIZZA_NAME" />
+                <ScalarProperty Name="Description" ColumnName="PIZZA_DESCRIPTION" />
+                <ScalarProperty Name="SmallPrice" ColumnName="SMALL_PIZZA_PRICE" />
+                <ScalarProperty Name="HeatRating" ColumnName="HEAT_RATING" />
+                <ScalarProperty Name="Image" ColumnName="PIZZA_IMAGE" />
+                <ScalarProperty Name="MediumPrice" ColumnName="MEDIUM_PIZZA_PRICE" />
+                <ScalarProperty Name="LargePrice" ColumnName="LARGE_PIZZA_PRICE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

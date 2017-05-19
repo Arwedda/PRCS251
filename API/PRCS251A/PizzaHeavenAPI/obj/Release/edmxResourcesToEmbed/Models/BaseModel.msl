@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PizzaBaseStoreContainer" CdmEntityContainer="BaseConnection">
+    <EntitySetMapping Name="PizzaBases">
+      <EntityTypeMapping TypeName="PizzaBase.PizzaBase">
+        <MappingFragment StoreEntitySet="PRCS251A_PIZZA_BASE">
+          <ScalarProperty Name="BaseName" ColumnName="BASE_NAME" />
+          <ScalarProperty Name="BaseDescription" ColumnName="BASE_DESCRIPTION" />
+          <ScalarProperty Name="BasePrice" ColumnName="BASE_PRICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

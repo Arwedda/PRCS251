@@ -1,0 +1,26 @@
+#order{
+    padding-top: 2.5%;
+    margin-left: 10%;
+    text-align: left;
+    width: 80%;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    width: 25%;
+}
+
+.itemprice, .lineprice, #total{
+    display: inline;
+}
+
+footer{
+    position: relative;
+}
+
+.saving{
+    color: #ff0000;
+}

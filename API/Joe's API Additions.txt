@@ -1,0 +1,9 @@
+Model Name		Connection Name			Namespace		Controller
+
+BaseModel 		BaseConnection 			PizzaBase		PizzaBasesController
+CheeseModel 		CheeseConnection 		PizzaCheese		PizzaCheeseController
+CrustModel 		CrustConnection 		PizzaCrust		PizzaCrustsController
+SauceModel 		SauceConn	 		PizzaSauce		PizzaSaucesController
+SizeModel 		SizeConnection 			PizzaSize		PizzaSizesController
+CustomerPizzaNameModel 	CustomerPizzaNameConnection 	CustomerPizzaName	CustomerPizzaNamesController
+CustomPizzaModel	CustomisedPizzaConnection	CustomPizza		CustomPizzasController

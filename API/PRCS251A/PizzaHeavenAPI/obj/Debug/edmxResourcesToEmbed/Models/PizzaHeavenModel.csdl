@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Models" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PRCS251A_CUSTOM_PIZZA">
+    <Key>
+      <PropertyRef Name="CUSTOM_PIZZA_NAME" />
+    </Key>
+    <Property Name="CUSTOM_PIZZA_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SIZE_NAME" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="BASE_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CRUST_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SAUCE_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CHEESE_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PRCS251A_CUSTOMER_PIZZA_NAME" Relationship="Self.FK1_CUSTOMPIZZANAME" FromRole="PRCS251A_CUSTOM_PIZZA" ToRole="PRCS251A_CUSTOMER_PIZZA_NAME" />
+    <NavigationProperty Name="PRCS251A_PIZZA_SIZE" Relationship="Self.FK1_SIZENAME" FromRole="PRCS251A_CUSTOM_PIZZA" ToRole="PRCS251A_PIZZA_SIZE" />
+    <NavigationProperty Name="PRCS251A_PIZZA_BASE" Relationship="Self.FK2_BASENAME" FromRole="PRCS251A_CUSTOM_PIZZA" ToRole="PRCS251A_PIZZA_BASE" />
+    <NavigationProperty Name="PRCS251A_PIZZA_CRUST" Relationship="Self.FK3_CRUSTNAME" FromRole="PRCS251A_CUSTOM_PIZZA" ToRole="PRCS251A_PIZZA_CRUST" />
+    <NavigationProperty Name="PRCS251A_PIZZA_SAUCE" Relationship="Self.FK4_SAUCENAME" FromRole="PRCS251A_CUSTOM_PIZZA" ToRole="PRCS251A_PIZZA_SAUCE" />
+    <NavigationProperty Name="PRCS251A_PIZZA_CHEESE" Relationship="Self.FK5_CHEESENAME" FromRole="PRCS251A_CUSTOM_PIZZA" ToRole="PRCS251A_PIZZA_CHEESE" />
+    <NavigationProperty Name="PRCS251A_ORDERED_ITEM" Relationship="Self.FK5_CUSTOMPIZZANAME" FromRole="PRCS251A_CUSTOM_PIZZA" ToRole="PRCS251A_ORDERED_ITEM" />
+  </EntityType>
+  <EntityType Name="PRCS251A_CUSTOMER">
+    <Key>
+      <PropertyRef Name="CUSTOMER_ID" />
+    </Key>
+    <Property Name="CUSTOMER_ID" Type="Int16" Nullable="false" />
+    <Property Name="FIRST_NAME" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="SURNAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" />
+    <Property Name="PHONE_NUMB" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="CUSTOMER_PASSWORD" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="PIZZA_POINTS" Type="Byte" />
+    <Property Name="BILLING_ADDRESS_LINE_ONE" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="BILLING_ADDRESS_LINE_TWO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="BILLING_CITY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="BILLING_COUNTY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="BILLING_POST_CODE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVERY_ADDRESS_LINE_ONE" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVERY_ADDRESS_LINE_TWO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVERY_CITY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVERY_COUNTY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVERY_POST_CODE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PRCS251A_CUSTOMER_ORDER" Relationship="Self.FK2_CUSTOMERID" FromRole="PRCS251A_CUSTOMER" ToRole="PRCS251A_CUSTOMER_ORDER" />
+    <NavigationProperty Name="PRCS251A_CUSTOMER_PIZZA_NAME" Relationship="Self.FK6_CUSTOMERID" FromRole="PRCS251A_CUSTOMER" ToRole="PRCS251A_CUSTOMER_PIZZA_NAME" />
+  </EntityType>
+  <EntityType Name="PRCS251A_CUSTOMER_ORDER">
+    <Key>
+      <PropertyRef Name="ORDER_ID" />
+    </Key>
+    <Property Name="ORDER_ID" Type="Int32" Nullable="false" />
+    <Property Name="ORDER_DATE_TIME" Type="DateTime" Precision="6" />
+    <Property Name="ORDER_COST" Type="Decimal" Precision="4" Scale="2" />
+    <Property Name="STAFF_ID" Type="Int16" />
+    <Property Name="CUSTOMER_ID" Type="Int16" />
+    <Property Name="DELIVERY_DATE_TIME" Type="DateTime" Precision="6" />
+    <Property Name="REQUESTED_DATE_TIME" Type="DateTime" Precision="6" />
+    <NavigationProperty Name="PRCS251A_CUSTOMER" Relationship="Self.FK2_CUSTOMERID" FromRole="PRCS251A_CUSTOMER_ORDER" ToRole="PRCS251A_CUSTOMER" />
+    <NavigationProperty Name="PRCS251A_STAFF" Relationship="Self.FK1_DELIVERYSTAFFID" FromRole="PRCS251A_CUSTOMER_ORDER" ToRole="PRCS251A_STAFF" />
+    <NavigationProperty Name="PRCS251A_ORDERED_ITEM" Relationship="Self.FK1_ORDERID" FromRole="PRCS251A_CUSTOMER_ORDER" ToRole="PRCS251A_ORDERED_ITEM" />
+  </EntityType>
+  <EntityType Name="PRCS251A_DRINK">
+    <Key>
+      <PropertyRef Name="DRINK_NAME" />
+    </Key>
+    <Property Name="DRINK_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DRINK_DESCRIPTION" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="DRINK_PRICE" Type="Decimal" Precision="1" Scale="2" />
+    <NavigationProperty Name="PRCS251A_ORDERED_ITEM" Relationship="Self.FK4_DRINKNAME" FromRole="PRCS251A_DRINK" ToRole="PRCS251A_ORDERED_ITEM" />
+  </EntityType>
+  <EntityType Name="PRCS251A_IMAGE">
+    <Key>
+      <PropertyRef Name="IMAGE_NAME" />
+    </Key>
+    <Property Name="IMAGE_NAME" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IMAGE" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PRCS251A_PIZZA">
+    <Key>
+      <PropertyRef Name="PIZZA_NAME" />
+    </Key>
+    <Property Name="PIZZA_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PIZZA_DESCRIPTION" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="PIZZA_PRICE" Type="Decimal" Precision="2" Scale="2" />
+    <Property Name="HEAT_RATING" Type="Boolean" />
+    <NavigationProperty Name="PRCS251A_ORDERED_ITEM" Relationship="Self.FK2_PIZZANAME" FromRole="PRCS251A_PIZZA" ToRole="PRCS251A_ORDERED_ITEM" />
+  </EntityType>
+  <EntityType Name="PRCS251A_PIZZA_BASE">
+    <Key>
+      <PropertyRef Name="BASE_NAME" />
+    </Key>
+    <Property Name="BASE_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BASE_DESCRIPTION" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="BASE_PRICE" Type="Decimal" Precision="1" Scale="2" />
+    <NavigationProperty Name="PRCS251A_CUSTOM_PIZZA" Relationship="Self.FK2_BASENAME" FromRole="PRCS251A_PIZZA_BASE" ToRole="PRCS251A_CUSTOM_PIZZA" />
+  </EntityType>
+  <EntityType Name="PRCS251A_PIZZA_CHEESE">
+    <Key>
+      <PropertyRef Name="CHEESE_NAME" />
+    </Key>
+    <Property Name="CHEESE_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CHEESE_DESCRIPTION" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="CHEESE_PRICE" Type="Decimal" Precision="1" Scale="2" />
+    <NavigationProperty Name="PRCS251A_CUSTOM_PIZZA" Relationship="Self.FK5_CHEESENAME" FromRole="PRCS251A_PIZZA_CHEESE" ToRole="PRCS251A_CUSTOM_PIZZA" />
+  </EntityType>
+  <EntityType Name="PRCS251A_PIZZA_CRUST">
+    <Key>
+      <PropertyRef Name="CRUST_NAME" />
+    </Key>
+    <Property Name="CRUST_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CRUST_DESCRIPTION" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="CRUST_PRICE" Type="Decimal" Precision="1" Scale="2" />
+    <NavigationProperty Name="PRCS251A_CUSTOM_PIZZA" Relationship="Self.FK3_CRUSTNAME" FromRole="PRCS251A_PIZZA_CRUST" ToRole="PRCS251A_CUSTOM_PIZZA" />
+  </EntityType>
+  <EntityType Name="PRCS251A_PIZZA_SAUCE">
+    <Key>
+      <PropertyRef Name="SAUCE_NAME" />
+    </Key>
+    <Property Name="SAUCE_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SAUCE_DESCRIPTION" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="SAUCE_PRICE" Type="Decimal" Precision="1" Scale="2" />
+    <Property Name="HEAT_RATING" Type="Boolean" />
+    <NavigationProperty Name="PRCS251A_CUSTOM_PIZZA" Relationship="Self.FK4_SAUCENAME" FromRole="PRCS251A_PIZZA_SAUCE" ToRole="PRCS251A_CUSTOM_PIZZA" />
+  </EntityType>
+  <EntityType Name="PRCS251A_PIZZA_SIZE">
+    <Key>
+      <PropertyRef Name="SIZE_NAME" />
+    </Key>
+    <Property Name="SIZE_NAME" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SIZE_DESCRIPTION" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="SIZE_PRICE" Type="Decimal" Precision="2" Scale="2" />
+    <NavigationProperty Name="PRCS251A_CUSTOM_PIZZA" Relationship="Self.FK1_SIZENAME" FromRole="PRCS251A_PIZZA_SIZE" ToRole="PRCS251A_CUSTOM_PIZZA" />
+  </EntityType>
+  <EntityType Name="PRCS251A_SIDE">
+    <Key>
+      <PropertyRef Name="SIDE_NAME" />
+    </Key>
+    <Property Name="SIDE_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SIDE_DESCRIPTION" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="SIDE_PRICE" Type="Decimal" Precision="2" Scale="2" />
+    <Property Name="HEAT_RATING" Type="Boolean" />
+    <NavigationProperty Name="PRCS251A_ORDERED_ITEM" Relationship="Self.FK3_SIDENAME" FromRole="PRCS251A_SIDE" ToRole="PRCS251A_ORDERED_ITEM" />
+  </EntityType>
+  <EntityType Name="PRCS251A_STAFF">
+    <Key>
+      <PropertyRef Name="STAFF_ID" />
+    </Key>
+    <Property Name="STAFF_ID" Type="Int16" Nullable="false" />
+    <Property Name="FIRST_NAME" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="SURNAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" />
+    <Property Name="PHONE_NUMB" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="COMPANY_POSITION" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="ADDRESS_LINE_ONE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_LINE_TWO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CITY" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="COUNTY" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="POST_CODE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="STAFF_PASSWORD" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PRCS251A_CUSTOMER_ORDER" Relationship="Self.FK1_DELIVERYSTAFFID" FromRole="PRCS251A_STAFF" ToRole="PRCS251A_CUSTOMER_ORDER" />
+  </EntityType>
+  <EntityType Name="PRCS251A_TOPPING">
+    <Key>
+      <PropertyRef Name="TOPPING_NAME" />
+    </Key>
+    <Property Name="TOPPING_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TOPPING_DESCRIPTION" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="TOPPING_PRICE" Type="Decimal" Precision="1" Scale="2" />
+    <Property Name="HEAT_RATING" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="PRCS251A_CUSTOMER_PIZZA_NAME">
+    <Key>
+      <PropertyRef Name="CUSTOM_PIZZA_NAME" />
+      <PropertyRef Name="CUSTOMER_PIZZA_NAME" />
+      <PropertyRef Name="CUSTOMER_ID" />
+    </Key>
+    <Property Name="CUSTOM_PIZZA_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CUSTOMER_PIZZA_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CUSTOMER_ID" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="PRCS251A_CUSTOM_PIZZA" Relationship="Self.FK1_CUSTOMPIZZANAME" FromRole="PRCS251A_CUSTOMER_PIZZA_NAME" ToRole="PRCS251A_CUSTOM_PIZZA" />
+    <NavigationProperty Name="PRCS251A_CUSTOMER" Relationship="Self.FK6_CUSTOMERID" FromRole="PRCS251A_CUSTOMER_PIZZA_NAME" ToRole="PRCS251A_CUSTOMER" />
+  </EntityType>
+  <EntityType Name="PRCS251A_ORDERED_ITEM">
+    <Key>
+      <PropertyRef Name="ORDER_ID" />
+      <PropertyRef Name="ITEM_NAME" />
+    </Key>
+    <Property Name="ORDER_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="QUANTITY" Type="Byte" />
+    <NavigationProperty Name="PRCS251A_CUSTOM_PIZZA" Relationship="Self.FK5_CUSTOMPIZZANAME" FromRole="PRCS251A_ORDERED_ITEM" ToRole="PRCS251A_CUSTOM_PIZZA" />
+    <NavigationProperty Name="PRCS251A_CUSTOMER_ORDER" Relationship="Self.FK1_ORDERID" FromRole="PRCS251A_ORDERED_ITEM" ToRole="PRCS251A_CUSTOMER_ORDER" />
+    <NavigationProperty Name="PRCS251A_DRINK" Relationship="Self.FK4_DRINKNAME" FromRole="PRCS251A_ORDERED_ITEM" ToRole="PRCS251A_DRINK" />
+    <NavigationProperty Name="PRCS251A_PIZZA" Relationship="Self.FK2_PIZZANAME" FromRole="PRCS251A_ORDERED_ITEM" ToRole="PRCS251A_PIZZA" />
+    <NavigationProperty Name="PRCS251A_SIDE" Relationship="Self.FK3_SIDENAME" FromRole="PRCS251A_ORDERED_ITEM" ToRole="PRCS251A_SIDE" />
+  </EntityType>
+  <Association Name="FK1_CUSTOMPIZZANAME">
+    <End Role="PRCS251A_CUSTOM_PIZZA" Type="Self.PRCS251A_CUSTOM_PIZZA" Multiplicity="1" />
+    <End Role="PRCS251A_CUSTOMER_PIZZA_NAME" Type="Self.PRCS251A_CUSTOMER_PIZZA_NAME" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRCS251A_CUSTOM_PIZZA">
+        <PropertyRef Name="CUSTOM_PIZZA_NAME" />
+      </Principal>
+      <Dependent Role="PRCS251A_CUSTOMER_PIZZA_NAME">
+        <PropertyRef Name="CUSTOM_PIZZA_NAME" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK1_SIZENAME">
+    <End Role="PRCS251A_PIZZA_SIZE" Type="Self.PRCS251A_PIZZA_SIZE" Multiplicity="0..1" />
+    <End Role="PRCS251A_CUSTOM_PIZZA" Type="Self.PRCS251A_CUSTOM_PIZZA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRCS251A_PIZZA_SIZE">
+        <PropertyRef Name="SIZE_NAME" />
+      </Principal>
+      <Dependent Role="PRCS251A_CUSTOM_PIZZA">
+        <PropertyRef Name="SIZE_NAME" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK2_BASENAME">
+    <End Role="PRCS251A_PIZZA_BASE" Type="Self.PRCS251A_PIZZA_BASE" Multiplicity="0..1" />
+    <End Role="PRCS251A_CUSTOM_PIZZA" Type="Self.PRCS251A_CUSTOM_PIZZA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRCS251A_PIZZA_BASE">
+        <PropertyRef Name="BASE_NAME" />
+      </Principal>
+      <Dependent Role="PRCS251A_CUSTOM_PIZZA">
+        <PropertyRef Name="BASE_NAME" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK3_CRUSTNAME">
+    <End Role="PRCS251A_PIZZA_CRUST" Type="Self.PRCS251A_PIZZA_CRUST" Multiplicity="0..1" />
+    <End Role="PRCS251A_CUSTOM_PIZZA" Type="Self.PRCS251A_CUSTOM_PIZZA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRCS251A_PIZZA_CRUST">
+        <PropertyRef Name="CRUST_NAME" />
+      </Principal>
+      <Dependent Role="PRCS251A_CUSTOM_PIZZA">
+        <PropertyRef Name="CRUST_NAME" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK4_SAUCENAME">
+    <End Role="PRCS251A_PIZZA_SAUCE" Type="Self.PRCS251A_PIZZA_SAUCE" Multiplicity="0..1" />
+    <End Role="PRCS251A_CUSTOM_PIZZA" Type="Self.PRCS251A_CUSTOM_PIZZA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRCS251A_PIZZA_SAUCE">
+        <PropertyRef Name="SAUCE_NAME" />
+      </Principal>
+      <Dependent Role="PRCS251A_CUSTOM_PIZZA">
+        <PropertyRef Name="SAUCE_NAME" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK5_CHEESENAME">
+    <End Role="PRCS251A_PIZZA_CHEESE" Type="Self.PRCS251A_PIZZA_CHEESE" Multiplicity="0..1" />
+    <End Role="PRCS251A_CUSTOM_PIZZA" Type="Self.PRCS251A_CUSTOM_PIZZA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRCS251A_PIZZA_CHEESE">
+        <PropertyRef Name="CHEESE_NAME" />
+      </Principal>
+      <Dependent Role="PRCS251A_CUSTOM_PIZZA">
+        <PropertyRef Name="CHEESE_NAME" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK5_CUSTOMPIZZANAME">
+    <End Role="PRCS251A_CUSTOM_PIZZA" Type="Self.PRCS251A_CUSTOM_PIZZA" Multiplicity="1" />
+    <End Role="PRCS251A_ORDERED_ITEM" Type="Self.PRCS251A_ORDERED_ITEM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRCS251A_CUSTOM_PIZZA">
+        <PropertyRef Name="CUSTOM_PIZZA_NAME" />
+      </Principal>
+      <Dependent Role="PRCS251A_ORDERED_ITEM">
+        <PropertyRef Name="ITEM_NAME" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK2_CUSTOMERID">
+    <End Role="PRCS251A_CUSTOMER" Type="Self.PRCS251A_CUSTOMER" Multiplicity="0..1" />
+    <End Role="PRCS251A_CUSTOMER_ORDER" Type="Self.PRCS251A_CUSTOMER_ORDER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRCS251A_CUSTOMER">
+        <PropertyRef Name="CUSTOMER_ID" />
+      </Principal>
+      <Dependent Role="PRCS251A_CUSTOMER_ORDER">
+        <PropertyRef Name="CUSTOMER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK6_CUSTOMERID">
+    <End Role="PRCS251A_CUSTOMER" Type="Self.PRCS251A_CUSTOMER" Multiplicity="1" />
+    <End Role="PRCS251A_CUSTOMER_PIZZA_NAME" Type="Self.PRCS251A_CUSTOMER_PIZZA_NAME" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRCS251A_CUSTOMER">
+        <PropertyRef Name="CUSTOMER_ID" />
+      </Principal>
+      <Dependent Role="PRCS251A_CUSTOMER_PIZZA_NAME">
+        <PropertyRef Name="CUSTOMER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK1_DELIVERYSTAFFID">
+    <End Role="PRCS251A_STAFF" Type="Self.PRCS251A_STAFF" Multiplicity="0..1" />
+    <End Role="PRCS251A_CUSTOMER_ORDER" Type="Self.PRCS251A_CUSTOMER_ORDER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRCS251A_STAFF">
+        <PropertyRef Name="STAFF_ID" />
+      </Principal>
+      <Dependent Role="PRCS251A_CUSTOMER_ORDER">
+        <PropertyRef Name="STAFF_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK1_ORDERID">
+    <End Role="PRCS251A_CUSTOMER_ORDER" Type="Self.PRCS251A_CUSTOMER_ORDER" Multiplicity="1" />
+    <End Role="PRCS251A_ORDERED_ITEM" Type="Self.PRCS251A_ORDERED_ITEM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRCS251A_CUSTOMER_ORDER">
+        <PropertyRef Name="ORDER_ID" />
+      </Principal>
+      <Dependent Role="PRCS251A_ORDERED_ITEM">
+        <PropertyRef Name="ORDER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK4_DRINKNAME">
+    <End Role="PRCS251A_DRINK" Type="Self.PRCS251A_DRINK" Multiplicity="1" />
+    <End Role="PRCS251A_ORDERED_ITEM" Type="Self.PRCS251A_ORDERED_ITEM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRCS251A_DRINK">
+        <PropertyRef Name="DRINK_NAME" />
+      </Principal>
+      <Dependent Role="PRCS251A_ORDERED_ITEM">
+        <PropertyRef Name="ITEM_NAME" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK2_PIZZANAME">
+    <End Role="PRCS251A_PIZZA" Type="Self.PRCS251A_PIZZA" Multiplicity="1" />
+    <End Role="PRCS251A_ORDERED_ITEM" Type="Self.PRCS251A_ORDERED_ITEM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRCS251A_PIZZA">
+        <PropertyRef Name="PIZZA_NAME" />
+      </Principal>
+      <Dependent Role="PRCS251A_ORDERED_ITEM">
+        <PropertyRef Name="ITEM_NAME" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK3_SIDENAME">
+    <End Role="PRCS251A_SIDE" Type="Self.PRCS251A_SIDE" Multiplicity="1" />
+    <End Role="PRCS251A_ORDERED_ITEM" Type="Self.PRCS251A_ORDERED_ITEM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRCS251A_SIDE">
+        <PropertyRef Name="SIDE_NAME" />
+      </Principal>
+      <Dependent Role="PRCS251A_ORDERED_ITEM">
+        <PropertyRef Name="ITEM_NAME" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PizzaHeavenConnection" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PRCS251A_CUSTOM_PIZZA" EntityType="Self.PRCS251A_CUSTOM_PIZZA" />
+    <EntitySet Name="PRCS251A_CUSTOMER" EntityType="Self.PRCS251A_CUSTOMER" />
+    <EntitySet Name="PRCS251A_CUSTOMER_ORDER" EntityType="Self.PRCS251A_CUSTOMER_ORDER" />
+    <EntitySet Name="PRCS251A_DRINK" EntityType="Self.PRCS251A_DRINK" />
+    <EntitySet Name="PRCS251A_IMAGE" EntityType="Self.PRCS251A_IMAGE" />
+    <EntitySet Name="PRCS251A_PIZZA" EntityType="Self.PRCS251A_PIZZA" />
+    <EntitySet Name="PRCS251A_PIZZA_BASE" EntityType="Self.PRCS251A_PIZZA_BASE" />
+    <EntitySet Name="PRCS251A_PIZZA_CHEESE" EntityType="Self.PRCS251A_PIZZA_CHEESE" />
+    <EntitySet Name="PRCS251A_PIZZA_CRUST" EntityType="Self.PRCS251A_PIZZA_CRUST" />
+    <EntitySet Name="PRCS251A_PIZZA_SAUCE" EntityType="Self.PRCS251A_PIZZA_SAUCE" />
+    <EntitySet Name="PRCS251A_PIZZA_SIZE" EntityType="Self.PRCS251A_PIZZA_SIZE" />
+    <EntitySet Name="PRCS251A_SIDE" EntityType="Self.PRCS251A_SIDE" />
+    <EntitySet Name="PRCS251A_STAFF" EntityType="Self.PRCS251A_STAFF" />
+    <EntitySet Name="PRCS251A_TOPPING" EntityType="Self.PRCS251A_TOPPING" />
+    <EntitySet Name="PRCS251A_CUSTOMER_PIZZA_NAME" EntityType="Self.PRCS251A_CUSTOMER_PIZZA_NAME" />
+    <EntitySet Name="PRCS251A_ORDERED_ITEM" EntityType="Self.PRCS251A_ORDERED_ITEM" />
+    <AssociationSet Name="FK1_CUSTOMPIZZANAME" Association="Self.FK1_CUSTOMPIZZANAME">
+      <End Role="PRCS251A_CUSTOM_PIZZA" EntitySet="PRCS251A_CUSTOM_PIZZA" />
+      <End Role="PRCS251A_CUSTOMER_PIZZA_NAME" EntitySet="PRCS251A_CUSTOMER_PIZZA_NAME" />
+    </AssociationSet>
+    <AssociationSet Name="FK1_SIZENAME" Association="Self.FK1_SIZENAME">
+      <End Role="PRCS251A_PIZZA_SIZE" EntitySet="PRCS251A_PIZZA_SIZE" />
+      <End Role="PRCS251A_CUSTOM_PIZZA" EntitySet="PRCS251A_CUSTOM_PIZZA" />
+    </AssociationSet>
+    <AssociationSet Name="FK2_BASENAME" Association="Self.FK2_BASENAME">
+      <End Role="PRCS251A_PIZZA_BASE" EntitySet="PRCS251A_PIZZA_BASE" />
+      <End Role="PRCS251A_CUSTOM_PIZZA" EntitySet="PRCS251A_CUSTOM_PIZZA" />
+    </AssociationSet>
+    <AssociationSet Name="FK3_CRUSTNAME" Association="Self.FK3_CRUSTNAME">
+      <End Role="PRCS251A_PIZZA_CRUST" EntitySet="PRCS251A_PIZZA_CRUST" />
+      <End Role="PRCS251A_CUSTOM_PIZZA" EntitySet="PRCS251A_CUSTOM_PIZZA" />
+    </AssociationSet>
+    <AssociationSet Name="FK4_SAUCENAME" Association="Self.FK4_SAUCENAME">
+      <End Role="PRCS251A_PIZZA_SAUCE" EntitySet="PRCS251A_PIZZA_SAUCE" />
+      <End Role="PRCS251A_CUSTOM_PIZZA" EntitySet="PRCS251A_CUSTOM_PIZZA" />
+    </AssociationSet>
+    <AssociationSet Name="FK5_CHEESENAME" Association="Self.FK5_CHEESENAME">
+      <End Role="PRCS251A_PIZZA_CHEESE" EntitySet="PRCS251A_PIZZA_CHEESE" />
+      <End Role="PRCS251A_CUSTOM_PIZZA" EntitySet="PRCS251A_CUSTOM_PIZZA" />
+    </AssociationSet>
+    <AssociationSet Name="FK5_CUSTOMPIZZANAME" Association="Self.FK5_CUSTOMPIZZANAME">
+      <End Role="PRCS251A_CUSTOM_PIZZA" EntitySet="PRCS251A_CUSTOM_PIZZA" />
+      <End Role="PRCS251A_ORDERED_ITEM" EntitySet="PRCS251A_ORDERED_ITEM" />
+    </AssociationSet>
+    <AssociationSet Name="FK2_CUSTOMERID" Association="Self.FK2_CUSTOMERID">
+      <End Role="PRCS251A_CUSTOMER" EntitySet="PRCS251A_CUSTOMER" />
+      <End Role="PRCS251A_CUSTOMER_ORDER" EntitySet="PRCS251A_CUSTOMER_ORDER" />
+    </AssociationSet>
+    <AssociationSet Name="FK6_CUSTOMERID" Association="Self.FK6_CUSTOMERID">
+      <End Role="PRCS251A_CUSTOMER" EntitySet="PRCS251A_CUSTOMER" />
+      <End Role="PRCS251A_CUSTOMER_PIZZA_NAME" EntitySet="PRCS251A_CUSTOMER_PIZZA_NAME" />
+    </AssociationSet>
+    <AssociationSet Name="FK1_DELIVERYSTAFFID" Association="Self.FK1_DELIVERYSTAFFID">
+      <End Role="PRCS251A_STAFF" EntitySet="PRCS251A_STAFF" />
+      <End Role="PRCS251A_CUSTOMER_ORDER" EntitySet="PRCS251A_CUSTOMER_ORDER" />
+    </AssociationSet>
+    <AssociationSet Name="FK1_ORDERID" Association="Self.FK1_ORDERID">
+      <End Role="PRCS251A_CUSTOMER_ORDER" EntitySet="PRCS251A_CUSTOMER_ORDER" />
+      <End Role="PRCS251A_ORDERED_ITEM" EntitySet="PRCS251A_ORDERED_ITEM" />
+    </AssociationSet>
+    <AssociationSet Name="FK4_DRINKNAME" Association="Self.FK4_DRINKNAME">
+      <End Role="PRCS251A_DRINK" EntitySet="PRCS251A_DRINK" />
+      <End Role="PRCS251A_ORDERED_ITEM" EntitySet="PRCS251A_ORDERED_ITEM" />
+    </AssociationSet>
+    <AssociationSet Name="FK2_PIZZANAME" Association="Self.FK2_PIZZANAME">
+      <End Role="PRCS251A_PIZZA" EntitySet="PRCS251A_PIZZA" />
+      <End Role="PRCS251A_ORDERED_ITEM" EntitySet="PRCS251A_ORDERED_ITEM" />
+    </AssociationSet>
+    <AssociationSet Name="FK3_SIDENAME" Association="Self.FK3_SIDENAME">
+      <End Role="PRCS251A_SIDE" EntitySet="PRCS251A_SIDE" />
+      <End Role="PRCS251A_ORDERED_ITEM" EntitySet="PRCS251A_ORDERED_ITEM" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

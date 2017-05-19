@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PizzaSize.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.1" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PRCS251A_PIZZA_SIZE">
+    <Key>
+      <PropertyRef Name="SIZE_NAME" />
+    </Key>
+    <Property Name="SIZE_NAME" Type="varchar2" MaxLength="12" Nullable="false" />
+    <Property Name="SIZE_DESCRIPTION" Type="varchar2" MaxLength="60" />
+    <Property Name="SIZE_PRICE" Type="number" Precision="6" Scale="2" />
+  </EntityType>
+  <EntityContainer Name="PizzaSizeStoreContainer">
+    <EntitySet Name="PRCS251A_PIZZA_SIZE" EntityType="Self.PRCS251A_PIZZA_SIZE" Schema="PRCS251A" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

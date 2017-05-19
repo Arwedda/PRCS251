@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelsStoreContainer" CdmEntityContainer="PizzaHeavenConnection">
+    <EntitySetMapping Name="PRCS251A_CUSTOM_PIZZA">
+      <EntityTypeMapping TypeName="Models.PRCS251A_CUSTOM_PIZZA">
+        <MappingFragment StoreEntitySet="PRCS251A_CUSTOM_PIZZA">
+          <ScalarProperty Name="CUSTOM_PIZZA_NAME" ColumnName="CUSTOM_PIZZA_NAME" />
+          <ScalarProperty Name="SIZE_NAME" ColumnName="SIZE_NAME" />
+          <ScalarProperty Name="BASE_NAME" ColumnName="BASE_NAME" />
+          <ScalarProperty Name="CRUST_NAME" ColumnName="CRUST_NAME" />
+          <ScalarProperty Name="SAUCE_NAME" ColumnName="SAUCE_NAME" />
+          <ScalarProperty Name="CHEESE_NAME" ColumnName="CHEESE_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRCS251A_CUSTOMER">
+      <EntityTypeMapping TypeName="Models.PRCS251A_CUSTOMER">
+        <MappingFragment StoreEntitySet="PRCS251A_CUSTOMER">
+          <ScalarProperty Name="CUSTOMER_ID" ColumnName="CUSTOMER_ID" />
+          <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+          <ScalarProperty Name="SURNAME" ColumnName="SURNAME" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="PHONE_NUMB" ColumnName="PHONE_NUMB" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="CUSTOMER_PASSWORD" ColumnName="CUSTOMER_PASSWORD" />
+          <ScalarProperty Name="PIZZA_POINTS" ColumnName="PIZZA_POINTS" />
+          <ScalarProperty Name="BILLING_ADDRESS_LINE_ONE" ColumnName="BILLING_ADDRESS_LINE_ONE" />
+          <ScalarProperty Name="BILLING_ADDRESS_LINE_TWO" ColumnName="BILLING_ADDRESS_LINE_TWO" />
+          <ScalarProperty Name="BILLING_CITY" ColumnName="BILLING_CITY" />
+          <ScalarProperty Name="BILLING_COUNTY" ColumnName="BILLING_COUNTY" />
+          <ScalarProperty Name="BILLING_POST_CODE" ColumnName="BILLING_POST_CODE" />
+          <ScalarProperty Name="DELIVERY_ADDRESS_LINE_ONE" ColumnName="DELIVERY_ADDRESS_LINE_ONE" />
+          <ScalarProperty Name="DELIVERY_ADDRESS_LINE_TWO" ColumnName="DELIVERY_ADDRESS_LINE_TWO" />
+          <ScalarProperty Name="DELIVERY_CITY" ColumnName="DELIVERY_CITY" />
+          <ScalarProperty Name="DELIVERY_COUNTY" ColumnName="DELIVERY_COUNTY" />
+          <ScalarProperty Name="DELIVERY_POST_CODE" ColumnName="DELIVERY_POST_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRCS251A_CUSTOMER_ORDER">
+      <EntityTypeMapping TypeName="Models.PRCS251A_CUSTOMER_ORDER">
+        <MappingFragment StoreEntitySet="PRCS251A_CUSTOMER_ORDER">
+          <ScalarProperty Name="ORDER_ID" ColumnName="ORDER_ID" />
+          <ScalarProperty Name="ORDER_DATE_TIME" ColumnName="ORDER_DATE_TIME" />
+          <ScalarProperty Name="ORDER_COST" ColumnName="ORDER_COST" />
+          <ScalarProperty Name="STAFF_ID" ColumnName="STAFF_ID" />
+          <ScalarProperty Name="CUSTOMER_ID" ColumnName="CUSTOMER_ID" />
+          <ScalarProperty Name="DELIVERY_DATE_TIME" ColumnName="DELIVERY_DATE_TIME" />
+          <ScalarProperty Name="REQUESTED_DATE_TIME" ColumnName="REQUESTED_DATE_TIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRCS251A_DRINK">
+      <EntityTypeMapping TypeName="Models.PRCS251A_DRINK">
+        <MappingFragment StoreEntitySet="PRCS251A_DRINK">
+          <ScalarProperty Name="DRINK_NAME" ColumnName="DRINK_NAME" />
+          <ScalarProperty Name="DRINK_DESCRIPTION" ColumnName="DRINK_DESCRIPTION" />
+          <ScalarProperty Name="DRINK_PRICE" ColumnName="DRINK_PRICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRCS251A_IMAGE">
+      <EntityTypeMapping TypeName="Models.PRCS251A_IMAGE">
+        <MappingFragment StoreEntitySet="PRCS251A_IMAGE">
+          <ScalarProperty Name="IMAGE_NAME" ColumnName="IMAGE_NAME" />
+          <ScalarProperty Name="IMAGE" ColumnName="IMAGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRCS251A_PIZZA">
+      <EntityTypeMapping TypeName="Models.PRCS251A_PIZZA">
+        <MappingFragment StoreEntitySet="PRCS251A_PIZZA">
+          <ScalarProperty Name="PIZZA_NAME" ColumnName="PIZZA_NAME" />
+          <ScalarProperty Name="PIZZA_DESCRIPTION" ColumnName="PIZZA_DESCRIPTION" />
+          <ScalarProperty Name="PIZZA_PRICE" ColumnName="PIZZA_PRICE" />
+          <ScalarProperty Name="HEAT_RATING" ColumnName="HEAT_RATING" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRCS251A_PIZZA_BASE">
+      <EntityTypeMapping TypeName="Models.PRCS251A_PIZZA_BASE">
+        <MappingFragment StoreEntitySet="PRCS251A_PIZZA_BASE">
+          <ScalarProperty Name="BASE_NAME" ColumnName="BASE_NAME" />
+          <ScalarProperty Name="BASE_DESCRIPTION" ColumnName="BASE_DESCRIPTION" />
+          <ScalarProperty Name="BASE_PRICE" ColumnName="BASE_PRICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRCS251A_PIZZA_CHEESE">
+      <EntityTypeMapping TypeName="Models.PRCS251A_PIZZA_CHEESE">
+        <MappingFragment StoreEntitySet="PRCS251A_PIZZA_CHEESE">
+          <ScalarProperty Name="CHEESE_NAME" ColumnName="CHEESE_NAME" />
+          <ScalarProperty Name="CHEESE_DESCRIPTION" ColumnName="CHEESE_DESCRIPTION" />
+          <ScalarProperty Name="CHEESE_PRICE" ColumnName="CHEESE_PRICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRCS251A_PIZZA_CRUST">
+      <EntityTypeMapping TypeName="Models.PRCS251A_PIZZA_CRUST">
+        <MappingFragment StoreEntitySet="PRCS251A_PIZZA_CRUST">
+          <ScalarProperty Name="CRUST_NAME" ColumnName="CRUST_NAME" />
+          <ScalarProperty Name="CRUST_DESCRIPTION" ColumnName="CRUST_DESCRIPTION" />
+          <ScalarProperty Name="CRUST_PRICE" ColumnName="CRUST_PRICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRCS251A_PIZZA_SAUCE">
+      <EntityTypeMapping TypeName="Models.PRCS251A_PIZZA_SAUCE">
+        <MappingFragment StoreEntitySet="PRCS251A_PIZZA_SAUCE">
+          <ScalarProperty Name="SAUCE_NAME" ColumnName="SAUCE_NAME" />
+          <ScalarProperty Name="SAUCE_DESCRIPTION" ColumnName="SAUCE_DESCRIPTION" />
+          <ScalarProperty Name="SAUCE_PRICE" ColumnName="SAUCE_PRICE" />
+          <ScalarProperty Name="HEAT_RATING" ColumnName="HEAT_RATING" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRCS251A_PIZZA_SIZE">
+      <EntityTypeMapping TypeName="Models.PRCS251A_PIZZA_SIZE">
+        <MappingFragment StoreEntitySet="PRCS251A_PIZZA_SIZE">
+          <ScalarProperty Name="SIZE_NAME" ColumnName="SIZE_NAME" />
+          <ScalarProperty Name="SIZE_DESCRIPTION" ColumnName="SIZE_DESCRIPTION" />
+          <ScalarProperty Name="SIZE_PRICE" ColumnName="SIZE_PRICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRCS251A_SIDE">
+      <EntityTypeMapping TypeName="Models.PRCS251A_SIDE">
+        <MappingFragment StoreEntitySet="PRCS251A_SIDE">
+          <ScalarProperty Name="SIDE_NAME" ColumnName="SIDE_NAME" />
+          <ScalarProperty Name="SIDE_DESCRIPTION" ColumnName="SIDE_DESCRIPTION" />
+          <ScalarProperty Name="SIDE_PRICE" ColumnName="SIDE_PRICE" />
+          <ScalarProperty Name="HEAT_RATING" ColumnName="HEAT_RATING" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRCS251A_STAFF">
+      <EntityTypeMapping TypeName="Models.PRCS251A_STAFF">
+        <MappingFragment StoreEntitySet="PRCS251A_STAFF">
+          <ScalarProperty Name="STAFF_ID" ColumnName="STAFF_ID" />
+          <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+          <ScalarProperty Name="SURNAME" ColumnName="SURNAME" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="PHONE_NUMB" ColumnName="PHONE_NUMB" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="COMPANY_POSITION" ColumnName="COMPANY_POSITION" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="ADDRESS_LINE_ONE" ColumnName="ADDRESS_LINE_ONE" />
+          <ScalarProperty Name="ADDRESS_LINE_TWO" ColumnName="ADDRESS_LINE_TWO" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="COUNTY" ColumnName="COUNTY" />
+          <ScalarProperty Name="POST_CODE" ColumnName="POST_CODE" />
+          <ScalarProperty Name="STAFF_PASSWORD" ColumnName="STAFF_PASSWORD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRCS251A_TOPPING">
+      <EntityTypeMapping TypeName="Models.PRCS251A_TOPPING">
+        <MappingFragment StoreEntitySet="PRCS251A_TOPPING">
+          <ScalarProperty Name="TOPPING_NAME" ColumnName="TOPPING_NAME" />
+          <ScalarProperty Name="TOPPING_DESCRIPTION" ColumnName="TOPPING_DESCRIPTION" />
+          <ScalarProperty Name="TOPPING_PRICE" ColumnName="TOPPING_PRICE" />
+          <ScalarProperty Name="HEAT_RATING" ColumnName="HEAT_RATING" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRCS251A_CUSTOMER_PIZZA_NAME">
+      <EntityTypeMapping TypeName="Models.PRCS251A_CUSTOMER_PIZZA_NAME">
+        <MappingFragment StoreEntitySet="PRCS251A_CUSTOMER_PIZZA_NAME">
+          <ScalarProperty Name="CUSTOM_PIZZA_NAME" ColumnName="CUSTOM_PIZZA_NAME" />
+          <ScalarProperty Name="CUSTOMER_PIZZA_NAME" ColumnName="CUSTOMER_PIZZA_NAME" />
+          <ScalarProperty Name="CUSTOMER_ID" ColumnName="CUSTOMER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRCS251A_ORDERED_ITEM">
+      <EntityTypeMapping TypeName="Models.PRCS251A_ORDERED_ITEM">
+        <MappingFragment StoreEntitySet="PRCS251A_ORDERED_ITEM">
+          <ScalarProperty Name="ORDER_ID" ColumnName="ORDER_ID" />
+          <ScalarProperty Name="ITEM_NAME" ColumnName="ITEM_NAME" />
+          <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

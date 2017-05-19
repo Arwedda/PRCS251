@@ -1,0 +1,57 @@
+Desktop:
+
+When no menu item is selected and edit button is clicked there is no prompt.—Done 
+Image will upload with no name but give a 500 response code.— Fixed, Dan x 
+Add menu item popup for cancel has 3 options.—Done 
+Add  Menu item image when your press cancel and then no it removes the path of the image selected.—Done
+On menu item button is close and on add image the button is cancel - Change both to cancel?- Done 
+When you save and close on menu item it states that your item has been uploaded but gives you an ok and cancel button.Done 
+Save Button on the menu item not working.-Done?
+On staff member edit when press cancel there is no alert. — Done 
+On staff password field is a text field so shows password.—Done
+Need regex on details entered.
+Double click on staff edits the table.—Done
+Add/Edit button on sides not working.—— Done
+
+
+
+ 
+Application:
+
+Accept delivery (attach staff id to order) + update status to out for delivery - Done
+Display map of customer's postcode - Done
+Get phone location - Done
+Display directions (think these 2 are separate tasks looking at google's APIs) - Done
+allow delivery confirmation - Done
+force locations to be (roughly) equal before allowing delivery confirmation
+
+
+
+
+Web to do:
+
+Custom Pizza (Styling)
+Percentage Offers (Show on basket?)
+Meal Deal Offers
+Host on Eeyore - potential heap space error
+http://stackoverflow.com/questions/1596009/java-lang-outofmemoryerror-java-heap-space
+
+
+
+
+Security:
+
+Use Captcha
+Session management (not reveal ID's or allow them to be predictable)
+Multi-factor authentication
+Server side validation
+Use access token
+
+
+
+
+
+General:
+
+JavaDoc
+Test Harness

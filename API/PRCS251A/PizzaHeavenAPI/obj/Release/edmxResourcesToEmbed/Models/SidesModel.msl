@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="SidesConnection">
+    <EntitySetMapping Name="Sides">
+      <EntityTypeMapping TypeName="Model.Side">
+        <MappingFragment StoreEntitySet="PRCS251A_SIDE">
+          <ScalarProperty Name="Name" ColumnName="SIDE_NAME" />
+          <ScalarProperty Name="Description" ColumnName="SIDE_DESCRIPTION" />
+          <ScalarProperty Name="Price" ColumnName="SIDE_PRICE" />
+          <ScalarProperty Name="HeatRating" ColumnName="HEAT_RATING" />
+          <ScalarProperty Name="Image" ColumnName="SIDE_IMAGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

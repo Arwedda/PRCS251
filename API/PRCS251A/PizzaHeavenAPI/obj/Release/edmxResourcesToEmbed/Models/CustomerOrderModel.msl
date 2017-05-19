@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="CustomerOrdersConnection">
+    <EntitySetMapping Name="CustomerOrders">
+      <EntityTypeMapping TypeName="Model.CustomerOrder">
+        <MappingFragment StoreEntitySet="PRCS251A_CUSTOMER_ORDER">
+          <ScalarProperty Name="PaymentMethod" ColumnName="PAYMENT_METHOD" />
+          <ScalarProperty Name="Status" ColumnName="STATUS" />
+          <ScalarProperty Name="ID" ColumnName="ORDER_ID" />
+          <ScalarProperty Name="DateTime" ColumnName="ORDER_DATE_TIME" />
+          <ScalarProperty Name="Cost" ColumnName="ORDER_COST" />
+          <ScalarProperty Name="StaffID" ColumnName="STAFF_ID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CUSTOMER_ID" />
+          <ScalarProperty Name="DeliveryDateTime" ColumnName="DELIVERY_DATE_TIME" />
+          <ScalarProperty Name="RequestedDateTime" ColumnName="REQUESTED_DATE_TIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

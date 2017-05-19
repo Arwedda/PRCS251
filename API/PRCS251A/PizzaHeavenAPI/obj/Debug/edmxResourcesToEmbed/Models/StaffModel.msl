@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelsStoreContainer" CdmEntityContainer="StaffEntityConnection">
+    <EntitySetMapping Name="Staff">
+      <EntityTypeMapping TypeName="Models.Staff">
+        <MappingFragment StoreEntitySet="PRCS251A_STAFF">
+          <ScalarProperty Name="Employed" ColumnName="EMPLOYED" />
+          <ScalarProperty Name="PrivateKey" ColumnName="PRIVATE_KEY" />
+          <ScalarProperty Name="Salt" ColumnName="SALT" />
+          <ScalarProperty Name="StaffID" ColumnName="STAFF_ID" />
+          <ScalarProperty Name="Firstname" ColumnName="FIRST_NAME" />
+          <ScalarProperty Name="Surname" ColumnName="SURNAME" />
+          <ScalarProperty Name="dob" ColumnName="DOB" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PHONE_NUMB" />
+          <ScalarProperty Name="Email" ColumnName="EMAIL" />
+          <ScalarProperty Name="CompanyPosition" ColumnName="COMPANY_POSITION" />
+          <ScalarProperty Name="StartDate" ColumnName="START_DATE" />
+          <ScalarProperty Name="AddressLineOne" ColumnName="ADDRESS_LINE_ONE" />
+          <ScalarProperty Name="AddressLineTwo" ColumnName="ADDRESS_LINE_TWO" />
+          <ScalarProperty Name="City" ColumnName="CITY" />
+          <ScalarProperty Name="County" ColumnName="COUNTY" />
+          <ScalarProperty Name="PostCode" ColumnName="POST_CODE" />
+          <ScalarProperty Name="StaffPassword" ColumnName="STAFF_PASSWORD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

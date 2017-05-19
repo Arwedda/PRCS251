@@ -1,0 +1,73 @@
+#customerdetails{
+    padding-top: 12.5%;
+    margin-left: 10%;
+    text-align: left;
+    width: 50%;
+}
+
+form{
+    margin-top: 3%;
+    margin-left: 25%;
+}
+
+table{
+    text-align: center;
+    width: 100%;
+}
+
+td{
+    width: 25%;
+}
+
+#personal{
+    padding-right: 75px;
+}
+
+#delivery{
+    padding-right: 69px;
+}
+
+#login{
+    padding-right: 90px;
+}
+
+tbody{
+    text-align: end;
+}
+
+td{
+    width: 25%;
+}
+
+input[type="text"],input[type="password"],input[type="date"]{
+  font-family: 'Lato';
+  font-size: 14px;
+  width: 250px;
+  appearance: none;
+  box-shadow: none;
+  border: solid 1px #3C3C3C;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus,input[type="password"]:focus ,input[type="date"]:focus {
+  border: solid 1px #DA4246;
+  outline: none;
+}
+
+input[type="text"]:disabled{
+  border: solid 1px #e6e6e6;
+  outline: none;
+}
+
+#submit{
+    float: right;
+    margin-right: 110px;
+}
+
+#submit:focus{
+    outline: none;
+}
+
+footer{
+    position: relative;
+}

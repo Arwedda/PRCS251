@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PercentageOffersStoreContainer" CdmEntityContainer="PercentageOfferConnection">
+    <EntitySetMapping Name="PercentageOffers">
+      <EntityTypeMapping TypeName="PercentageOffers.PercentageOffer">
+        <MappingFragment StoreEntitySet="PRCS251A_PERCENTAGE_OFFER">
+          <ScalarProperty Name="OfferID" ColumnName="OFFER_ID" />
+          <ScalarProperty Name="MinimumValue" ColumnName="MINIMUM_VALUE" />
+          <ScalarProperty Name="Discount" ColumnName="DISCOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

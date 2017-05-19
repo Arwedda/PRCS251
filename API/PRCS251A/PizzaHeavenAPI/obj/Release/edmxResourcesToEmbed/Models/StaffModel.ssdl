@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Models.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.1" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PRCS251A_STAFF">
+    <Key>
+      <PropertyRef Name="STAFF_ID" />
+    </Key>
+    <Property Name="STAFF_ID" Type="number" Precision="4" Scale="0" Nullable="false" />
+    <Property Name="FIRST_NAME" Type="varchar2" MaxLength="44" />
+    <Property Name="SURNAME" Type="varchar2" MaxLength="44" />
+    <Property Name="DOB" Type="date" />
+    <Property Name="PHONE_NUMB" Type="varchar2" MaxLength="24" />
+    <Property Name="EMAIL" Type="varchar2" MaxLength="128" />
+    <Property Name="COMPANY_POSITION" Type="varchar2" MaxLength="40" />
+    <Property Name="START_DATE" Type="date" />
+    <Property Name="ADDRESS_LINE_ONE" Type="varchar2" MaxLength="44" />
+    <Property Name="ADDRESS_LINE_TWO" Type="varchar2" MaxLength="44" />
+    <Property Name="CITY" Type="varchar2" MaxLength="44" />
+    <Property Name="COUNTY" Type="varchar2" MaxLength="44" />
+    <Property Name="POST_CODE" Type="varchar2" MaxLength="24" />
+    <Property Name="STAFF_PASSWORD" Type="varchar2" MaxLength="108" />
+    <Property Name="SALT" Type="varchar2" MaxLength="64" />
+    <Property Name="PRIVATE_KEY" Type="varchar2" MaxLength="16" />
+    <Property Name="EMPLOYED" Type="varchar2" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="ModelsStoreContainer">
+    <EntitySet Name="PRCS251A_STAFF" EntityType="Self.PRCS251A_STAFF" Schema="PRCS251A" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

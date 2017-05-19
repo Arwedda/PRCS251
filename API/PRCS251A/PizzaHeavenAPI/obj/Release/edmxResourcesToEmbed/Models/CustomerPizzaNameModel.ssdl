@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CustomerPizzaName.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.1" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'PRCS251A.PRCS251A_CUSTOMER_PIZZA_NAME' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PRCS251A_CUSTOMER_PIZZA_NAME">
+    <Key>
+      <PropertyRef Name="CUSTOM_PIZZA_NAME" />
+      <PropertyRef Name="CUSTOMER_PIZZA_NAME" />
+      <PropertyRef Name="CUSTOMER_ID" />
+    </Key>
+    <Property Name="CUSTOM_PIZZA_NAME" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="CUSTOMER_PIZZA_NAME" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="CUSTOMER_ID" Type="number" Precision="5" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="CustomerPizzaNameStoreContainer">
+    <EntitySet Name="PRCS251A_CUSTOMER_PIZZA_NAME" EntityType="Self.PRCS251A_CUSTOMER_PIZZA_NAME" store:Type="Tables" store:Schema="PRCS251A">
+      <DefiningQuery>SELECT 
+"PRCS251A_CUSTOMER_PIZZA_NAME"."CUSTOM_PIZZA_NAME" AS "CUSTOM_PIZZA_NAME", 
+"PRCS251A_CUSTOMER_PIZZA_NAME"."CUSTOMER_PIZZA_NAME" AS "CUSTOMER_PIZZA_NAME", 
+"PRCS251A_CUSTOMER_PIZZA_NAME"."CUSTOMER_ID" AS "CUSTOMER_ID"
+FROM "PRCS251A"."PRCS251A_CUSTOMER_PIZZA_NAME" "PRCS251A_CUSTOMER_PIZZA_NAME"</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

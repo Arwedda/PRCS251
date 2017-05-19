@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CustomPizza" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CustomPizza">
+    <Key>
+      <PropertyRef Name="CustomPizzaName" />
+    </Key>
+    <Property Name="CustomPizzaName" Type="String" MaxLength="201" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SizeName" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="BaseName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CrustName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SauceName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CheeseName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CustomPizzaImage" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="CustomisedPizzaConnection" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CustomPizzas" EntityType="CustomPizza.CustomPizza" />
+  </EntityContainer>
+</Schema>

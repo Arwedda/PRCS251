@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Customers.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.1" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PRCS251A_CUSTOMER">
+    <Key>
+      <PropertyRef Name="CUSTOMER_ID" />
+    </Key>
+    <Property Name="CUSTOMER_ID" Type="number" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="FIRST_NAME" Type="varchar2" MaxLength="44" />
+    <Property Name="SURNAME" Type="varchar2" MaxLength="44" />
+    <Property Name="DOB" Type="date" />
+    <Property Name="PHONE_NUMB" Type="varchar2" MaxLength="24" />
+    <Property Name="EMAIL" Type="varchar2" MaxLength="128" />
+    <Property Name="CUSTOMER_PASSWORD" Type="varchar2" MaxLength="108" />
+    <Property Name="DELIVERY_ADDRESS_LINE_ONE" Type="varchar2" MaxLength="44" />
+    <Property Name="DELIVERY_ADDRESS_LINE_TWO" Type="varchar2" MaxLength="44" />
+    <Property Name="DELIVERY_CITY" Type="varchar2" MaxLength="44" />
+    <Property Name="DELIVERY_COUNTY" Type="varchar2" MaxLength="44" />
+    <Property Name="DELIVERY_POST_CODE" Type="varchar2" MaxLength="24" />
+    <Property Name="SALT" Type="varchar2" MaxLength="64" />
+    <Property Name="PRIVATE_KEY" Type="varchar2" MaxLength="16" />
+  </EntityType>
+  <EntityContainer Name="CustomersStoreContainer">
+    <EntitySet Name="PRCS251A_CUSTOMER" EntityType="Self.PRCS251A_CUSTOMER" Schema="PRCS251A" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

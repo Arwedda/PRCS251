@@ -1,0 +1,76 @@
+.pizzaMobile{
+  border: 1px solid black;
+}
+
+.sidesMobile{
+  border: 1px solid black;
+}
+
+.drinksMobile{
+  border: 1px solid black;
+}
+
+.mobilelogin{
+  text-align: center;
+  margin-left: 10%;
+  width: 75%;
+  min-height: 50px;
+  border: 1px solid black;
+  background: #3CB371;
+}
+
+.loginText{
+  text-align: left;
+  margin-left: 5%;
+}
+
+#offer{
+  width:80%;
+  text-align: center;
+  margin-left: 10%;
+}
+
+#offer img{
+  border: 1px solid black;
+}
+
+#selection img{
+  border: none;
+  height: 25px;
+  width: auto;
+}
+
+#welcome{
+    margin-top: 11.5%;
+}
+
+#welcome h2{
+  font-family: 'Lobster';
+}
+
+input[type=text] {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+input[type=password] {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+h8 {
+    display: inline-block;
+    color: #000;
+    font-family: 'Lobster';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 60px;
+    margin: 0;
+    text-align: center;
+    position: relative;
+}

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="ToppingsEntityConnection">
+    <EntitySetMapping Name="Toppings">
+      <EntityTypeMapping TypeName="Model.Topping">
+        <MappingFragment StoreEntitySet="PRCS251A_TOPPING">
+          <ScalarProperty Name="ToppingImage" ColumnName="TOPPING_IMAGE" />
+          <ScalarProperty Name="HeatRating" ColumnName="HEAT_RATING" />
+          <ScalarProperty Name="ToppingPrice" ColumnName="TOPPING_PRICE" />
+          <ScalarProperty Name="ToppingDescription" ColumnName="TOPPING_DESCRIPTION" />
+          <ScalarProperty Name="ToppingName" ColumnName="TOPPING_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

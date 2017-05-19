@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="ImageConnection">
+    <EntitySetMapping Name="Images">
+      <EntityTypeMapping TypeName="Model.Image">
+        <MappingFragment StoreEntitySet="PRCS251A_IMAGE">
+          <ScalarProperty Name="Name" ColumnName="IMAGE_NAME" />
+          <ScalarProperty Name="Base64" ColumnName="IMAGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

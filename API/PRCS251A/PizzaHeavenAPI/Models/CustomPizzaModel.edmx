@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CustomPizza.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.1" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="PRCS251A_CUSTOM_PIZZA">
+          <Key>
+            <PropertyRef Name="CUSTOM_PIZZA_NAME" />
+          </Key>
+          <Property Name="CUSTOM_PIZZA_NAME" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="SIZE_NAME" Type="varchar2" MaxLength="12" />
+          <Property Name="BASE_NAME" Type="varchar2" MaxLength="20" />
+          <Property Name="CRUST_NAME" Type="varchar2" MaxLength="20" />
+          <Property Name="SAUCE_NAME" Type="varchar2" MaxLength="20" />
+          <Property Name="CHEESE_NAME" Type="varchar2" MaxLength="20" />
+          <Property Name="CUSTOM_PIZZA_IMAGE" Type="varchar2" MaxLength="15" />
+        </EntityType>
+        <EntityContainer Name="CustomPizzaStoreContainer">
+          <EntitySet Name="PRCS251A_CUSTOM_PIZZA" EntityType="Self.PRCS251A_CUSTOM_PIZZA" Schema="PRCS251A" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CustomPizza" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CustomPizza">
+          <Key>
+            <PropertyRef Name="CustomPizzaName" />
+          </Key>
+          <Property Name="CustomPizzaName" Type="String" MaxLength="201" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SizeName" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="BaseName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CrustName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SauceName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CheeseName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CustomPizzaImage" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="CustomisedPizzaConnection" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CustomPizzas" EntityType="CustomPizza.CustomPizza" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CustomPizzaStoreContainer" CdmEntityContainer="CustomisedPizzaConnection">
+          <EntitySetMapping Name="CustomPizzas">
+            <EntityTypeMapping TypeName="CustomPizza.CustomPizza">
+              <MappingFragment StoreEntitySet="PRCS251A_CUSTOM_PIZZA">
+                <ScalarProperty Name="CustomPizzaName" ColumnName="CUSTOM_PIZZA_NAME" />
+                <ScalarProperty Name="SizeName" ColumnName="SIZE_NAME" />
+                <ScalarProperty Name="BaseName" ColumnName="BASE_NAME" />
+                <ScalarProperty Name="CrustName" ColumnName="CRUST_NAME" />
+                <ScalarProperty Name="SauceName" ColumnName="SAUCE_NAME" />
+                <ScalarProperty Name="CheeseName" ColumnName="CHEESE_NAME" />
+                <ScalarProperty Name="CustomPizzaImage" ColumnName="CUSTOM_PIZZA_IMAGE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

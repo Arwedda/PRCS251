@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="OrderItem">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="201" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Quantity" Type="Byte" />
+    <Property Name="Price" Type="Decimal" Precision="32" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="OrderItemsConnection" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="OrderItems" EntityType="Model.OrderItem" />
+  </EntityContainer>
+</Schema>
